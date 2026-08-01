@@ -9,7 +9,7 @@
 
 if ( ! defined( 'VYRO_BLOG_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'VYRO_BLOG_VERSION', '1.0.6' );
+	define( 'VYRO_BLOG_VERSION', '1.0.7' );
 }
 
 /**
@@ -286,3 +286,36 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'OCDI_Plugin' ) ) {
 	require get_template_directory() . '/inc/ocdi.php';
 }
+
+/**
+ * Unregister default WordPress widgets to clean up sidebar.
+ */
+function vyro_blog_unregister_default_widgets() {
+    unregister_widget('WP_Widget_Pages');
+    unregister_widget('WP_Widget_Calendar');
+    unregister_widget('WP_Widget_Archives');
+    unregister_widget('WP_Widget_Links');
+    unregister_widget('WP_Widget_Meta');
+    unregister_widget('WP_Widget_Search');
+    unregister_widget('WP_Widget_Text');
+    unregister_widget('WP_Widget_Categories');
+    unregister_widget('WP_Widget_Recent_Posts');
+    unregister_widget('WP_Widget_Recent_Comments');
+    unregister_widget('WP_Widget_RSS');
+    unregister_widget('WP_Widget_Tag_Cloud');
+    unregister_widget('WP_Nav_Menu_Widget');
+}
+add_action('widgets_init', 'vyro_blog_unregister_default_widgets', 11);
+
+/**
+ * Fix Bengali excerpts by strictly limiting length
+ */
+function vyro_blog_custom_excerpt_length( $length ) {
+    return 15;
+}
+add_filter( 'excerpt_length', 'vyro_blog_custom_excerpt_length', 999 );
+
+function vyro_blog_custom_excerpt_more( $more ) {
+    return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'vyro-blog' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'vyro_blog_custom_excerpt_more' );

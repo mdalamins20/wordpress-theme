@@ -5074,10 +5074,13 @@ p, a, span, div, li,
     grid-column: span 1 !important;
 }
 
-.blog-post-container .blog-post-inner .blog-post-image img {
+.post-thumbnail img,
+.blog-post-container .blog-post-inner .blog-post-image img,
+.blog-post-image img {
     border-radius: 12px 12px 0 0;
     width: 100%;
-    height: 250px !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -5086,6 +5089,17 @@ p, a, span, div, li,
     margin-top: 15px !important;
     border-top: 1px solid #eee;
     padding-top: 15px !important;
+}
+
+/* Fix Header Overlap */
+.site-header {
+    padding-bottom: 10px;
+}
+
+/* Fix footer empty social links */
+.footer-social-icons a[href="#"],
+.social-links a[href="#"] {
+    display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
