@@ -19,4 +19,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: htdocs/
+        server-dir: htdocs/wp-content/themes/vyro-blog/
+        local-dir: wp-content/themes/vyro-blog/
