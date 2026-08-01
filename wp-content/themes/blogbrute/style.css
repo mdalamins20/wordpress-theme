@@ -1,0 +1,211 @@
+/*
+Theme Name: BlogBrute
+Theme URI: https://themeansar.com/free-themes/blogbrute-free-blog-magazine-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: Blogbrute is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Blogbrute is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Blogbrute is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/blogarise/blogbrute/ and documentation at https://docs.themeansar.com/docs/blogarise/
+Version: 0.3
+Requires PHP: 7.4
+Requires at least: 6.6
+Tested up to: 7.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: blogarise
+Text Domain: blogbrute
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Blogbrute WordPress Theme is child theme of Newsup, Copyright 2023 Themeansar
+Blogbrute is distributed under the terms of the GNU General Public License v3
+
+Blogbrute is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+:root {
+    --bo-color: #222;
+    --bxbr: 2px solid var(--bo-color);
+    --bxbra: 8px;
+    --bxsh: 8px 8px 0px var(--bo-color);
+    --small-bxsh: 4px 4px 0px var(--bo-color);
+    --bxshover: 8px 8px 0px var(--bo-color);
+    --bstras: 0 4px 60px 0 rgba(0, 0, 0, 0.2);
+    --headFont: 'Bricolage Grotesque', sans-serif;
+    --bodyFont: 'Inter', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .bs-blog-post .title, .bs-slide .inner .title, .bs-widget-title .title{
+    font-weight: 800;
+}
+.screen-reader-text {
+	clip: unset;
+}
+.site-branding-text .site-title a{
+    text-shadow: clamp(2px, (100vw - 991px) * 999, 4px) clamp(2px, (100vw - 991px) * 999, 4px) var(--pri-color);
+}
+.bs-slide .inner .title{
+    font-size: calc( 22px  + clamp(0px, (100vw - 767px) * 999, 8px)  + clamp(0px, (100vw - 991px) * 999, 5px) );   
+}
+.small-post .title, .bs-widget .small-post-content .title{
+    font-weight: 700;
+}
+a:focus {
+    outline: 1px solid;
+}
+::selection{
+    background-color: #2E2E2E;
+    color: var(--pri-color);
+}
+.trending-posts .img-small-post .post-small-img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.trending-posts .img-small-post{
+    margin-right: 0;
+    width: auto;
+}
+.trending-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #eee;
+}
+.trending-posts .small-post{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 15px 0px;
+    overflow: visible;
+}
+.trending-posts .small-post:first-child{
+    padding-top: 0;
+}
+.trending-posts .small-post .img-small-post {
+    border: 2px solid #000;
+    box-shadow: var(--small-bxsh);
+    border-radius: calc(var(--bxbra)/1.333333);
+}
+.trending-posts .small-post-content {
+    grid-column: span 2;
+}
+.trending-posts .bs-blog-category{
+    justify-content: flex-start;
+}
+.bs-blog-category a:not(.bs-blog-post.three .bs-blog-category a){
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+.bs-default .navbar-wp{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid var(--bo-color);
+    border-bottom: 1px solid var(--bo-color);
+}
+.mg-latest-news .bn_title .title{
+    line-height: 1.3;
+    padding: 10px 20px;
+    font-size: 22px;
+    box-shadow: var(--small-bxsh);
+    border-radius: calc(var(--bxbra)/1.333333);
+}
+.mg-latest-news{
+    height: 50px;
+}
+.bs-slide .inner .title, .trending-posts .small-post .title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* animation */
+.mg-latest-news .bn_title .title {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    /* padding-right: 8px; */
+}
+/* The icon */
+.mg-latest-news .bn_title .title::before {
+    content: "\e0b7";   /* Font Awesome unicode */
+    font-family: "Font Awesome 6 Free"; /* Or your FA font */
+    font-weight: 900;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+/* Ripple animation container (behind icon) */
+.mg-latest-news .bn_title .title::after {
+    content: "";
+    position: absolute;
+    left: 26px;       /* adjust position relative to icon */
+    top: 50%;
+    transform: translateY(-50%) translateX(0);
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: zoom 2s linear infinite;
+    z-index: 1;
+}
+/* Additional ripples */
+.mg-latest-news .bn_title::before,
+.mg-latest-news .bn_title::after {
+    content: "";
+    position: absolute;
+    left: 29px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.mg-latest-news .bn_title::before {
+    animation: zoom 2s linear 0.5s infinite;
+}
+.mg-latest-news .bn_title::after {
+    animation: zoom 2s linear 1s infinite;
+}
+.bs-default .navbar-brand{
+    height: auto;
+}
+
+@keyframes zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .bs-default .navbar-wp{
+        padding: 20px 0;
+        border-top: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .trending-posts .small-post {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .trending-posts .small-post-content {
+        grid-column: span 3;
+    }
+    .mg-latest-news .bn_title .title{
+        font-size: 0;
+        gap: 0;
+    }
+}

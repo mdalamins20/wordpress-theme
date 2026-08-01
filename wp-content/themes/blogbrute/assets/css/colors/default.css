@@ -1,0 +1,35 @@
+:root {
+  --pri-color: #FF7A18;
+  --grady-color: linear-gradient(135deg, #FF7A18 0%, #FFB347 100%);
+  --head-color: #171717;
+  --text-color: #343434;
+}
+.bs-default .navbar-wp{
+    background: transparent;
+    border-color: #7a7a7a99;
+}
+.bs-blog-category a:not(.bs-blog-post.three .bs-blog-category a), .bs-blog-category a:hover:not(.bs-blog-post.three .bs-blog-category a:hover), .bs-blog-category a:focus, .bs-default .navbar-wp .navbar-nav>li>a:is(:hover, :focus ){
+    background: transparent;
+    color: var(--pri-color);
+}
+.mg-latest-news .bn_title, .trending-posts .small-post{
+    background: var(--wrap-color);
+}
+.mg-latest-news .bn_title .title{
+    background: var(--pri-color);
+    border-color: var(--bo-color);
+}
+.bs-default .navbar-wp .navbar-nav>li>a, .mg-latest-news .mg-latest-news-slider a{
+    color: var(--head-color);
+}
+.mg-latest-news .mg-latest-news-slider a:is(:hover, :focus ){
+    color: var(--pri-color);
+}
+.navbar-toggler{
+    background: transparent;
+}
+@media screen and (max-width: 991px){
+    .bs-default .navbar-wp .navbar-nav>li>a:hover, .bs-default .navbar-wp .navbar-nav>li>a:focus{
+        color: var(--text-color);
+    }
+}

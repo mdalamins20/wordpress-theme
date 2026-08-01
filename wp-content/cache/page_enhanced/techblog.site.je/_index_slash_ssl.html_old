@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Tech BLog &#8211; My Tech Blog Website</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Tech BLog &raquo; Feed" href="https://techblog.site.je/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Tech BLog &raquo; Comments Feed" href="https://techblog.site.je/comments/feed/" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='wp-block-archives-inline-css'>
+.wp-block-archives{box-sizing:border-box}.wp-block-archives-dropdown label{display:block}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/archives/style.min.css */
+</style>
+<style id='wp-block-categories-inline-css'>
+.wp-block-categories{box-sizing:border-box}.wp-block-categories.alignleft{margin-right:2em}.wp-block-categories.alignright{margin-left:2em}.wp-block-categories.wp-block-categories-dropdown.aligncenter{text-align:center}.wp-block-categories .wp-block-categories__label{display:block;width:100%}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/categories/style.min.css */
+</style>
+<style id='wp-block-heading-inline-css'>
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id='wp-block-latest-comments-inline-css'>
+ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments .wp-block-latest-comments{padding-left:0}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id='wp-block-latest-posts-inline-css'>
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid{display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2 li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2 li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3 li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3 li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4 li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4 li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5 li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5 li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6 li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6 li:nth-child(6n){margin-right:0}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id='wp-block-search-inline-css'>
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{height:1.25em;min-height:24px;min-width:24px;width:1.25em;fill:currentColor;vertical-align:text-bottom}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/search/style.min.css */
+</style>
+<style id='wp-block-search-theme-inline-css'>
+.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/search/theme.min.css */
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/group/style.min.css */
+</style>
+<style id='wp-block-group-theme-inline-css'>
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/group/theme.min.css */
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id='wp-block-preformatted-inline-css'>
+.wp-block-preformatted{box-sizing:border-box;white-space:pre-wrap}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/preformatted/style.min.css */
+</style>
+<style id='wp-block-quote-inline-css'>
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/quote/style.min.css */
+</style>
+<style id='wp-block-quote-theme-inline-css'>
+.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}
+/*# sourceURL=https://techblog.site.je/wp-includes/blocks/quote/theme.min.css */
+</style>
+
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='vyro-blog-slick-css-css' href='https://techblog.site.je/wp-content/themes/vyro-blog/assets/css/slick.min.css?ver=1.8.0' media='all' />
+<link rel='stylesheet' id='vyro-blog-font-awesome-css-css' href='https://techblog.site.je/wp-content/themes/vyro-blog/assets/css/all.min.css?ver=7.2.0' media='all' />
+<link rel='stylesheet' id='vyro-blog-google-fonts-css' href='https://techblog.site.je/wp-content/fonts/100947cad6f18cf15407827d39e2bb11.css' media='all' />
+<link rel='stylesheet' id='vyro-blog-style-css' href='https://techblog.site.je/wp-content/themes/vyro-blog/style.css?ver=1.0.0' media='all' />
+<style id='vyro-blog-style-inline-css'>
+
+	/* Color */
+	:root {
+		--site-title-color: #ff6500;
+	}
+	
+	/* Typograhpy */
+	:root {
+		--font-heading: "Inter", serif;
+		--font-main: -apple-system, BlinkMacSystemFont,"Roboto", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	}
+
+	body,
+	button, input, select, optgroup, textarea {
+		font-family: "Roboto", serif;
+	}
+
+	.site-title a {
+		font-family: "Yatra One", serif;
+	}
+
+	.site-description {
+		font-family: "Public Sans", serif;
+	}
+	
+/*# sourceURL=vyro-blog-style-inline-css */
+</style>
+<script src="https://techblog.site.je/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://techblog.site.je/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://techblog.site.je/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://techblog.site.je/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.4" />
+
+<style type="text/css" id="breadcrumb-trail-css">.breadcrumbs ul li::after {content: "/";}</style>
+</head>
+
+<body class="home blog wp-embed-responsive wp-theme-vyro-blog hfeed light-mode right-sidebar">
+
+		<div id="page" class="site">
+
+		<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+		<div id="loader" class="loader-6">
+			<div class="loader-container">
+				<div id="preloader">
+				</div>
+			</div>
+		</div><!-- #loader -->
+
+		<header id="masthead" class="site-header">
+			<div class="vyro-blog-header">
+								<div class="navigation-outer-wrapper">
+					<div class="vyro-blog-navigation">
+						<div class="section-wrapper">
+							<div class="navigation-wrapper">
+								<div class="site-branding">
+																		<div class="site-identity">
+																				<h1 class="site-title"><a href="https://techblog.site.je/" rel="home">Tech BLog</a></h1>
+																						<p class="site-description">My Tech Blog Website</p>
+																			</div>	
+								</div>
+								<div class="vyro-blog-navigation-container">
+									<nav id="site-navigation" class="main-navigation">
+										<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+											<span class="ham-icon"></span>
+											<span class="ham-icon"></span>
+											<span class="ham-icon"></span>
+										</button>
+										<div class="navigation-area">
+																					</div>
+									</nav><!-- #site-navigation -->
+								</div>
+								<div class="navigation-right-part">
+																<div class="vyro-blog-header-search">
+									<div class="header-search-wrap">
+										<a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a>
+										<div class="header-search-form">
+											<form role="search" method="get" class="search-form" action="https://techblog.site.je/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>										</div>
+									</div>
+								</div>
+																	<div class="header-custom-button">
+										<a href="">Subscription</a>
+									</div>
+																</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>	
+			<!-- end of navigation -->
+		</header><!-- #masthead -->
+
+					<div class="vyro-blog-main-wrapper">
+				<div class="section-wrapper">
+					<div class="vyro-blog-container-wrapper">
+						<main id="primary" class="site-main">
+
+					<div class="blog-archive-layout archive-tile-grid-layout column-2">
+				
+<article id="post-56" class="post-56 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%97%e0%a6%bf%e0%a6%9f%e0%a6%b9%e0%a6%be%e0%a6%ac-%e0%a6%aa%e0%a7%87%e0%a6%9c-github-pages-%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b9%e0%a6%be%e0%a6%b0-%e0%a6%95%e0%a6%b0%e0%a7%87-%e0%a6%af/" aria-hidden="true" tabindex="-1">
+				<img width="2560" height="1429" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-scaled.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="গিটহাব পেজ (GitHub Pages) ব্যবহার করে যেকোনো ওয়েবসাইট সম্পূর্ণ ফ্রিতে লাইভ করুন: একটি পূর্ণাঙ্গ নির্দেশিকা" decoding="async" fetchpriority="high" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-scaled.jpg 2560w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-300x167.jpg 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-1024x572.jpg 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-768x429.jpg 768w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-1536x857.jpg 1536w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_6mclq76mclq76mcl-2048x1143.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%97%e0%a6%bf%e0%a6%9f%e0%a6%b9%e0%a6%be%e0%a6%ac-%e0%a6%aa%e0%a7%87%e0%a6%9c-github-pages-%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b9%e0%a6%be%e0%a6%b0-%e0%a6%95%e0%a6%b0%e0%a7%87-%e0%a6%af/" rel="bookmark">গিটহাব পেজ (GitHub Pages) ব্যবহার করে যেকোনো ওয়েবসাইট সম্পূর্ণ ফ্রিতে লাইভ করুন: একটি পূর্ণাঙ্গ নির্দেশিকা</a></h2>				<div class="post-excerpt">
+					<p>একজন&nbsp;আধুনিক&nbsp;ওয়েব&nbsp;ডেভেলপার&nbsp;বা&nbsp;ফ্রন্ট-এন্ড&nbsp;ইঞ্জিনিয়ার&nbsp;হিসেবে&nbsp;আমরা&nbsp;প্রতিনিয়ত&nbsp;নতুন&nbsp;নতুন&nbsp;প্রজেক্ট&nbsp;তৈরি&nbsp;করি।&nbsp;কিন্তু&nbsp;প্রজেক্ট&nbsp;তৈরি&nbsp;করার&nbsp;পর&nbsp;সবচেয়ে&nbsp;বড়&nbsp;চ্যালেঞ্জ&nbsp;হয়ে&nbsp;দাঁড়ায়&nbsp;সেটিকে&nbsp;ইন্টারনেটে&nbsp;লাইভ&nbsp;বা&nbsp;পাবলিশ&nbsp;করা।&nbsp;ক্লায়েন্টকে&nbsp;দেখানোর&nbsp;জন্য&nbsp;বা&nbsp;নিজের&nbsp;পোর্টফোলিওতে&nbsp;যুক্ত&nbsp;করার&nbsp;জন্য&nbsp;হোস্টিং&nbsp;এবং&nbsp;ডোমেইনের&nbsp;পেছনে&nbsp;টাকা&nbsp;খরচ&nbsp;করা&nbsp;সবসময়&nbsp;নতুন&nbsp;ডেভেলপারদের&nbsp;জন্য&nbsp;সম্ভব&nbsp;হয়ে&nbsp;ওঠে&nbsp;না।&nbsp;এখানেই&nbsp;আশীর্বাদ&nbsp;হয়ে&nbsp;আসে&nbsp;GitHub&nbsp;Pages! আজকে&nbsp;আমরা&nbsp;বিস্তারিত&nbsp;জানবো&nbsp;কীভাবে&nbsp;অতিরিক্ত&nbsp;কোনো&nbsp;খরচ&nbsp;ছাড়াই,&nbsp;সম্পূর্ণ&nbsp;নিরাপদে&nbsp;এবং&nbsp;খুব&nbsp;সহজেই&nbsp;আপনার&nbsp;যেকোনো&nbsp;স্ট্যাটিক&nbsp;ওয়েবসাইট&nbsp;(HTML,&nbsp;CSS,&nbsp;JavaScript&nbsp;বা&nbsp;React/Vue&nbsp;প্রজেক্ট)&nbsp;গিটহাব&nbsp;থেকে&nbsp;ফ্রিতে&nbsp;লাইভ&nbsp;করতে&nbsp;পারেন। গিটহাব&nbsp;পেজ&nbsp;(GitHub&nbsp;Pages)&nbsp;কী? GitHub&nbsp;Pages&nbsp;হলো&nbsp;GitHub-এর&nbsp;একটি&nbsp;চমৎকার&nbsp;ফ্রি&nbsp;হোস্টিং&nbsp;সার্ভিস,&nbsp;যা&nbsp;সরাসরি&nbsp;আপনার&nbsp;গিটহাব&nbsp;রিপোজিটরি&nbsp;থেকে&nbsp;স্ট্যাটিক&nbsp;ওয়েবসাইট&nbsp;(Static&nbsp;Website)&nbsp;হোস্টিং&nbsp;করার&nbsp;সুবিধা&nbsp;দেয়।&nbsp;এর&nbsp;জন্য&nbsp;কোনো&nbsp;সার্ভার&nbsp;কনফিগারেশন,&nbsp;এপিএসি&nbsp;বা&nbsp;এনজিনএক্স&nbsp;সেটআপ&nbsp;করার&nbsp;ঝামেলা&nbsp;পোহাতে&nbsp;হয়&nbsp;না।&nbsp;কোড&nbsp;পুশ&nbsp;করার&nbsp;সাথে&nbsp;সাথেই&nbsp;আপনার&nbsp;সাইট&nbsp;লাইভ&nbsp;হয়ে&nbsp;যায়! কেন&nbsp;গিটহাব&nbsp;পেজ&nbsp;ব্যবহার&nbsp;করবেন? ধাপ&nbsp;১:&nbsp;আপনার&nbsp;প্রজেক্ট&nbsp;প্রস্তুত&nbsp;করা প্রথমে&nbsp;নিশ্চিত&nbsp;করুন&nbsp;আপনার&nbsp;প্রজেক্ট&nbsp;ফোল্ডারে&nbsp;অন্তত&nbsp;একটি&nbsp;index.html&nbsp;ফাইল&nbsp;রয়েছে।&nbsp;এটি&nbsp;আপনার&nbsp;ওয়েবসাইটের&nbsp;হোমপেজ&nbsp;হিসেবে&nbsp;কাজ&nbsp;করবে।&nbsp;উদাহরণস্বরূপ,&nbsp;আপনার&nbsp;প্রজেক্টের&nbsp;স্ট্রাকচার&nbsp;নিচে&nbsp;দেওয়া&nbsp;হলো: my-portfolio/ │ ├── index.html ├── style.css └── script.js যদি&nbsp;আপনি&nbsp;সাধারণ&nbsp;HTML,&nbsp;CSS&nbsp;বা&nbsp;JavaScript&nbsp;ব্যবহার&nbsp;করেন,&nbsp;তবে&nbsp;কোনো&nbsp;অতিরিক্ত&nbsp;বিল্ড&nbsp;স্টেপের&nbsp;প্রয়োজন&nbsp;নেই।&nbsp;তবে&nbsp;আপনি&nbsp;যদি&nbsp;React.js&nbsp;বা&nbsp;Vue.js&nbsp;ব্যবহার&nbsp;করেন,&nbsp;তবে&nbsp;প্রোডাকশন&nbsp;বিল্ড&nbsp;তৈরি&nbsp;করে&nbsp;নিতে&nbsp;হবে। ধাপ&nbsp;২:&nbsp;গিটহাবে&nbsp;নতুন&nbsp;রিপোজিটরি&nbsp;তৈরি&nbsp;করা প্রথমে&nbsp;আপনার&nbsp;গিটহাব&nbsp;অ্যাকাউন্টে&nbsp;লগইন&nbsp;করুন&nbsp;এবং&nbsp;ডান&nbsp;পাশের&nbsp;কোণায়&nbsp;থাকা&nbsp;&#8216;+&#8217;&nbsp;আইকনে&nbsp;ক্লিক&nbsp;করে&nbsp;&#8216;New&nbsp;repository&#8217;&nbsp;সিলেক্ট&nbsp;করুন। ধাপ&nbsp;৩:&nbsp;টার্মিনাল&nbsp;বা&nbsp;কমান্ড&nbsp;প্রম্পট&nbsp;দিয়ে&nbsp;কোড&nbsp;আপলোড&nbsp;করা আপনার&nbsp;লোকাল&nbsp;মেশিনে&nbsp;প্রজেক্ট&nbsp;ফোল্ডারে&nbsp;টার্মিনাল&nbsp;ওপেন&nbsp;করুন&nbsp;এবং&nbsp;নিচের&nbsp;কমান্ডগুলো&nbsp;ধাপে&nbsp;ধাপে&nbsp;রান&nbsp;করুন:&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%97%e0%a6%bf%e0%a6%9f%e0%a6%b9%e0%a6%be%e0%a6%ac-%e0%a6%aa%e0%a7%87%e0%a6%9c-github-pages-%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b9%e0%a6%be%e0%a6%b0-%e0%a6%95%e0%a6%b0%e0%a7%87-%e0%a6%af/"><time class="entry-date published updated" datetime="2026-08-01T01:22:10+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-56 -->
+
+<article id="post-54" class="post-54 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/fastapi-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%85%e0%a6%9f%e0%a7%8b%e0%a6%ae%e0%a7%87%e0%a6%b6%e0%a6%a8-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%81%e0%a6%a8-%e0%a6%aa%e0%a6%be%e0%a6%87/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_3qxh9i3qxh9i3qxh.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="FastAPI দিয়ে অটোমেশন শিখুন: পাইথনের আধুনিক ফ্রেমওয়ার্ক দিয়ে প্রজেক্ট অটোমেশনের কমপ্লিট গাইড" decoding="async" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_3qxh9i3qxh9i3qxh.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_3qxh9i3qxh9i3qxh-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_3qxh9i3qxh9i3qxh-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_3qxh9i3qxh9i3qxh-768x429.png 768w" sizes="(max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/fastapi-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%85%e0%a6%9f%e0%a7%8b%e0%a6%ae%e0%a7%87%e0%a6%b6%e0%a6%a8-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%81%e0%a6%a8-%e0%a6%aa%e0%a6%be%e0%a6%87/" rel="bookmark">FastAPI দিয়ে অটোমেশন শিখুন: পাইথনের আধুনিক ফ্রেমওয়ার্ক দিয়ে প্রজেক্ট অটোমেশনের কমপ্লিট গাইড</a></h2>				<div class="post-excerpt">
+					<p>বর্তমান&nbsp;প্রযুক্তির&nbsp;যুগে&nbsp;কাজ&nbsp;দ্রুত&nbsp;এবং&nbsp;নিখুঁতভাবে&nbsp;করার&nbsp;জন্য&nbsp;অটোমেশনের&nbsp;কোনো&nbsp;বিকল্প&nbsp;নেই।&nbsp;একজন&nbsp;ডিজিটাল&nbsp;সলিউশন&nbsp;আর্কিটেক্ট&nbsp;হিসেবে&nbsp;আমি&nbsp;সবসময়&nbsp;এমন&nbsp;টুলস&nbsp;এবং&nbsp;টেকনোলজি&nbsp;ব্যবহারের&nbsp;পরামর্শ&nbsp;দিই,&nbsp;যা&nbsp;পারফরম্যান্সের&nbsp;সাথে&nbsp;কোনো&nbsp;আপস&nbsp;করে&nbsp;না।&nbsp;পাইথন&nbsp;(Python)&nbsp;প্রোগ্রামিং&nbsp;ভাষার&nbsp;ক্ষেত্রে&nbsp;বর্তমানে&nbsp;অটোমেশন&nbsp;এবং&nbsp;হাই-স্পিড&nbsp;ব্যাকএন্ড&nbsp;ডেভেলপমেন্টের&nbsp;জন্য&nbsp;সবচেয়ে&nbsp;জনপ্রিয়&nbsp;ফ্রেমওয়ার্ক&nbsp;হলো&nbsp;FastAPI। আজকের&nbsp;এই&nbsp;বিস্তারিত&nbsp;ব্লগে&nbsp;আমরা&nbsp;দেখব&nbsp;কীভাবে&nbsp;FastAPI&nbsp;দিয়ে&nbsp;অটোমেশন&nbsp;শুরু&nbsp;করা&nbsp;যায়&nbsp;এবং&nbsp;কেন&nbsp;এটি&nbsp;প্রথাগত&nbsp;ফ্রেমওয়ার্কগুলোর&nbsp;চেয়ে&nbsp;অনেক&nbsp;বেশি&nbsp;এগিয়ে। FastAPI&nbsp;কী&nbsp;এবং&nbsp;কেন&nbsp;এটি&nbsp;অটোমেশনের&nbsp;জন্য&nbsp;সেরা? FastAPI&nbsp;হলো&nbsp;পাইথনের&nbsp;একটি&nbsp;আধুনিক,&nbsp;দ্রুতগতির&nbsp;(High-Performance)&nbsp;ওয়েব&nbsp;ফ্রেমওয়ার্ক,&nbsp;যা&nbsp;মূলত&nbsp;এপিআই&nbsp;(API)&nbsp;তৈরির&nbsp;জন্য&nbsp;ডিজাইন&nbsp;করা&nbsp;হয়েছে।&nbsp;এর&nbsp;মূল&nbsp;সুবিধাগুলো&nbsp;হলো: অটোমেশনের&nbsp;ক্ষেত্রে&nbsp;যখন&nbsp;আমাদের&nbsp;ব্যাকগ্রাউন্ড&nbsp;টাস্ক,&nbsp;ডাটা&nbsp;স্ক্র্যাপিং,&nbsp;বা&nbsp;থার্ড-পার্টি&nbsp;সার্ভিস&nbsp;ইন্টিগ্রেশন&nbsp;করতে&nbsp;হয়,&nbsp;তখন&nbsp;FastAPI&nbsp;অসাধারণ&nbsp;পারফরম্যান্স&nbsp;দেয়।&nbsp;আপনি&nbsp;অফিসিয়াল&nbsp;FastAPI&nbsp;Documentation&nbsp;ভিজিট&nbsp;করে&nbsp;আরও&nbsp;বিস্তারিত&nbsp;জানতে&nbsp;পারেন। প্রয়োজনীয়&nbsp;পরিবেশ&nbsp;তৈরি&nbsp;(Environment&nbsp;Setup) FastAPI&nbsp;দিয়ে&nbsp;অটোমেশন&nbsp;প্রজেক্ট&nbsp;শুরু&nbsp;করার&nbsp;আগে&nbsp;আমাদের&nbsp;পাইথন&nbsp;এবং&nbsp;প্রয়োজনীয়&nbsp;লাইব্রেরি&nbsp;ইনস্টল&nbsp;করতে&nbsp;হবে।&nbsp;টার্মিনালে&nbsp;নিচের&nbsp;কমান্ডগুলো&nbsp;রান&nbsp;করুন: # একটি নতুন ফোল্ডার তৈরি করুন এবং তার ভেতর প্রবেশ করুন mkdir fastapi-automation&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/fastapi-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%85%e0%a6%9f%e0%a7%8b%e0%a6%ae%e0%a7%87%e0%a6%b6%e0%a6%a8-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%81%e0%a6%a8-%e0%a6%aa%e0%a6%be%e0%a6%87/"><time class="entry-date published updated" datetime="2026-08-01T01:21:18+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							2 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-54 -->
+
+<article id="post-52" class="post-52 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a6%bf%e0%a6%ad%e0%a6%be%e0%a6%ac%e0%a7%87-%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0-%e0%a6%ab/" aria-hidden="true" tabindex="-1">
+				<img width="1672" height="941" src="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="কোডিং শিখে কিভাবে আপনার ফিউচার আপডেট করবে: একজন ডিজিটাল সলিউশন আর্কিটেক্টের গাইডলাইন" decoding="async" srcset="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM.png 1672w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM-300x169.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM-1024x576.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM-768x432.png 768w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_05_13-PM-1536x864.png 1536w" sizes="(max-width: 1672px) 100vw, 1672px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a6%bf%e0%a6%ad%e0%a6%be%e0%a6%ac%e0%a7%87-%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0-%e0%a6%ab/" rel="bookmark">কোডিং শিখে কিভাবে আপনার ফিউচার আপডেট করবে: একজন ডিজিটাল সলিউশন আর্কিটেক্টের গাইডলাইন</a></h2>				<div class="post-excerpt">
+					<p>বর্তমান&nbsp;ডিজিটাল&nbsp;যুগে&nbsp;প্রযুক্তি&nbsp;আমাদের&nbsp;জীবনযাত্রার&nbsp;ধরণ&nbsp;সম্পূর্ণ&nbsp;বদলে&nbsp;দিয়েছে।&nbsp;আর&nbsp;এই&nbsp;পরিবর্তনের&nbsp;কেন্দ্রবিন্দুতে&nbsp;রয়েছে&nbsp;কোডিং&nbsp;বা&nbsp;প্রোগ্রামিং।&nbsp;আপনি&nbsp;যদি&nbsp;ভাবছেন&nbsp;কোডিং&nbsp;কেবল&nbsp;কিছু&nbsp;জটিল&nbsp;লজিক&nbsp;বা&nbsp;কম্পিউটারের&nbsp;ভাষা&nbsp;লেখার&nbsp;বিষয়,&nbsp;তবে&nbsp;আপনার&nbsp;ধারণাটি&nbsp;এখনই&nbsp;বদলানোর&nbsp;সময়।&nbsp;কোডিং&nbsp;শেখা&nbsp;মানে&nbsp;কেবল&nbsp;একটি&nbsp;নতুন&nbsp;দক্ষতা&nbsp;অর্জন&nbsp;করা&nbsp;নয়;&nbsp;এটি&nbsp;আপনার&nbsp;পুরো&nbsp;ক্যারিয়ার&nbsp;এবং&nbsp;ভবিষ্যৎকে&nbsp;একটি&nbsp;নতুন&nbsp;উচ্চতায়&nbsp;নিয়ে&nbsp;যাওয়ার&nbsp;মোক্ষম&nbsp;চাবিকাঠি।&nbsp;একজন&nbsp;ডিজিটাল&nbsp;সলিউশন&nbsp;আর্কিটেক্ট&nbsp;হিসেবে&nbsp;আমি&nbsp;প্রতিদিন&nbsp;দেখি&nbsp;কিভাবে&nbsp;সঠিক&nbsp;প্রযুক্তির&nbsp;প্রয়োগ&nbsp;মানুষের&nbsp;জীবন&nbsp;ও&nbsp;ব্যবসাকে&nbsp;বদলে&nbsp;দিচ্ছে।&nbsp;আজকের&nbsp;এই&nbsp;বিস্তারিত&nbsp;আর্টিকেলে&nbsp;আমরা&nbsp;আলোচনা&nbsp;করব&nbsp;কিভাবে&nbsp;কোডিং&nbsp;শিখে&nbsp;আপনি&nbsp;আপনার&nbsp;ভবিষ্যৎকে&nbsp;সম্পূর্ণ&nbsp;আপডেট&nbsp;করতে&nbsp;পারেন। ১.&nbsp;কোডিং&nbsp;কেন&nbsp;বর্তমান&nbsp;যুগের&nbsp;সবচেয়ে&nbsp;মূল্যবান&nbsp;স্কিল? আজকের&nbsp;দিনে&nbsp;প্রচলিত&nbsp;অনেক&nbsp;চাকরি&nbsp;বা&nbsp;পেশা&nbsp;অটোমেশন&nbsp;এবং&nbsp;আর্টিফিশিয়াল&nbsp;ইন্টেলিজেন্সের&nbsp;(AI)&nbsp;কারণে&nbsp;হুমকির&nbsp;মুখে&nbsp;পড়ছে।&nbsp;কিন্তু&nbsp;যারা&nbsp;কোডিং&nbsp;জানেন&nbsp;বা&nbsp;টেকনোলজি&nbsp;তৈরি&nbsp;করতে&nbsp;পারেন,&nbsp;তাদের&nbsp;চাহিদা&nbsp;দিন&nbsp;দিন&nbsp;বেড়েই&nbsp;চলেছে।&nbsp;কোডিং&nbsp;হলো&nbsp;এমন&nbsp;একটি&nbsp;ভাষা&nbsp;যার&nbsp;মাধ্যমে&nbsp;আপনি&nbsp;কম্পিউটারের&nbsp;সাথে&nbsp;কথা&nbsp;বলতে&nbsp;পারেন&nbsp;এবং&nbsp;নিজের&nbsp;আইডিয়াকে&nbsp;বাস্তব&nbsp;রূপ&nbsp;দিতে&nbsp;পারেন। ২.&nbsp;আধুনিক&nbsp;ওয়েব&nbsp;ডেভেলপমেন্ট&nbsp;এবং&nbsp;টেক&nbsp;স্ট্যাক ভবিষ্যৎমুখী&nbsp;হতে&nbsp;হলে&nbsp;আপনাকে&nbsp;কেবল&nbsp;সাধারণ&nbsp;কোডিং&nbsp;শিখলেই&nbsp;চলবে&nbsp;না,&nbsp;বরং&nbsp;আধুনিক&nbsp;এবং&nbsp;স্কেলেবল&nbsp;টেকনোলজিগুলোর&nbsp;সাথে&nbsp;পরিচিত&nbsp;হতে&nbsp;হবে।&nbsp;বর্তমানের&nbsp;আধুনিক&nbsp;ওয়েব&nbsp;অ্যাপ্লিকেশনের&nbsp;জন্য&nbsp;React&nbsp;এবং&nbsp;Node.js&nbsp;এর&nbsp;জুড়ি&nbsp;মেলা&nbsp;ভার।&nbsp;একটি&nbsp;শক্তিশালী&nbsp;ব্যাকএন্ড&nbsp;এবং&nbsp;রিয়েল-টাইম&nbsp;ডাটাবেস&nbsp;যেমন&nbsp;Firebase&nbsp;ব্যবহার&nbsp;করে&nbsp;খুব&nbsp;দ্রুত&nbsp;হাই-পারফরম্যান্স&nbsp;অ্যাপ্লিকেশন&nbsp;তৈরি&nbsp;করা&nbsp;সম্ভব। নিচে&nbsp;একটি&nbsp;আধুনিক&nbsp;জাভাস্ক্রিপ্ট&nbsp;(ES6+)&nbsp;কোডের&nbsp;উদাহরণ&nbsp;দেওয়া&nbsp;হলো,&nbsp;যা&nbsp;প্রায়ই&nbsp;রিয়্যাক্ট&nbsp;বা&nbsp;নোড&nbsp;জেএস&nbsp;প্রজেক্টে&nbsp;ব্যবহৃত&nbsp;হয়: // একটি মডার্ন অ্যাসিনক্রোনাস ফাংশন যা এপিআই থেকে ডাটা ফেচ করে const fetchUserDashboardData =&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a6%bf%e0%a6%ad%e0%a6%be%e0%a6%ac%e0%a7%87-%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0-%e0%a6%ab/"><time class="entry-date published updated" datetime="2026-08-01T01:20:16+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-52 -->
+
+<article id="post-50" class="post-50 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a7%87-%e0%a6%b2%e0%a6%9c%e0%a6%bf%e0%a6%95-%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a6%be%e0%a6%b8%e0%a7%8d/" aria-hidden="true" tabindex="-1">
+				<img width="1672" height="941" src="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ফ্লাটারে লজিক লেখার মাস্টারক্লাস: যেভাবে সবকিছু মনে রেখে সুপার ফাস্ট স্পিডে কোড লিখবেন" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM.png 1672w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM-300x169.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM-1024x576.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM-768x432.png 768w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_07_26-PM-1536x864.png 1536w" sizes="auto, (max-width: 1672px) 100vw, 1672px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a7%87-%e0%a6%b2%e0%a6%9c%e0%a6%bf%e0%a6%95-%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a6%be%e0%a6%b8%e0%a7%8d/" rel="bookmark">ফ্লাটারে লজিক লেখার মাস্টারক্লাস: যেভাবে সবকিছু মনে রেখে সুপার ফাস্ট স্পিডে কোড লিখবেন</a></h2>				<div class="post-excerpt">
+					<p>ফ্লাটার&nbsp;(Flutter)&nbsp;বর্তমান&nbsp;সময়ের&nbsp;অন্যতম&nbsp;জনপ্রিয়&nbsp;এবং&nbsp;শক্তিশালী&nbsp;ক্রস-প্লাটফর্ম&nbsp;ফ্রেমওয়ার্ক।&nbsp;কিন্তু&nbsp;আপনি&nbsp;কি&nbsp;কখনো&nbsp;লক্ষ্য&nbsp;করেছেন&nbsp;কেন&nbsp;কিছু&nbsp;ডেভেলপার&nbsp;খুব&nbsp;কম&nbsp;সময়ে&nbsp;বিশাল&nbsp;এবং&nbsp;জটিল&nbsp;সব&nbsp;অ্যাপ&nbsp;তৈরি&nbsp;করে&nbsp;ফেলেন,&nbsp;আর&nbsp;অন্যদের&nbsp;একটি&nbsp;ছোট&nbsp;ফিচারের&nbsp;লজিক&nbsp;দাঁড়&nbsp;করাতেই&nbsp;ঘাম&nbsp;ছুটে&nbsp;যায়?&nbsp;উত্তরটি&nbsp;লুকিয়ে&nbsp;আছে&nbsp;কোডিং&nbsp;স্ট্র্যাটেজি&nbsp;এবং&nbsp;লজিক্যাল&nbsp;স্ট্রাকচার-এর&nbsp;ওপর&nbsp;দখলের&nbsp;ওপর। আজকের&nbsp;এই&nbsp;মাস্টারক্লাসে&nbsp;আমরা&nbsp;আলোচনা&nbsp;করব&nbsp;কীভাবে&nbsp;ফ্লাটারে&nbsp;লজিক&nbsp;লেখার&nbsp;সময়&nbsp;সবকিছু&nbsp;নিখুঁতভাবে&nbsp;মনে&nbsp;রাখা&nbsp;যায়&nbsp;এবং&nbsp;সুপার&nbsp;ফাস্ট&nbsp;স্পিডে&nbsp;ক্লিন&nbsp;কোড&nbsp;লেখা&nbsp;সম্ভব&nbsp;হয়।&nbsp;একজন&nbsp;ডিজিটাল&nbsp;সলিউশন&nbsp;আর্কিটেক্ট&nbsp;হিসেবে&nbsp;আমি&nbsp;সবসময়&nbsp;স্কেলেবিলিটি&nbsp;এবং&nbsp;রিডেবল&nbsp;কোডের&nbsp;ওপর&nbsp;জোর&nbsp;দিই।&nbsp;চলুন,&nbsp;গভীরের&nbsp;বিষয়গুলোতে&nbsp;প্রবেশ&nbsp;করা&nbsp;যাক। ১.&nbsp;প্রবলেম&nbsp;ডিঅ্যাকস্ট্রাকশন&nbsp;এবং&nbsp;মেন্টাল&nbsp;মডেল&nbsp;তৈরি যেকোনো&nbsp;কোড&nbsp;লেখার&nbsp;আগে&nbsp;আপনার&nbsp;ব্রেইনে&nbsp;অ্যাপের&nbsp;একটি&nbsp;মেন্টাল&nbsp;মডেল&nbsp;তৈরি&nbsp;করে&nbsp;নেওয়া&nbsp;জরুরি।&nbsp;কোড&nbsp;এডিটর&nbsp;খোলার&nbsp;সাথে&nbsp;সাথেই&nbsp;টাইপ&nbsp;শুরু&nbsp;না&nbsp;করে,&nbsp;খাতা-কলমে&nbsp;বা&nbsp;হোয়াইটবোর্ডে&nbsp;লজিকটা&nbsp;ফ্লো-চার্ট&nbsp;আকারে&nbsp;সাজিয়ে&nbsp;নিন।&nbsp;ফ্লাটারে&nbsp;সাধারণত&nbsp;স্টেট&nbsp;ম্যানেজমেন্ট,&nbsp;ইউআই&nbsp;রেন্ডারিং&nbsp;এবং&nbsp;বিজনেস&nbsp;লজিক—এই&nbsp;তিনটি&nbsp;বিষয়&nbsp;আলাদা&nbsp;রাখা&nbsp;অত্যন্ত&nbsp;গুরুত্বপূর্ণ। &#8220;একটি&nbsp;ভালো&nbsp;কোডবেস&nbsp;হলো&nbsp;সেই&nbsp;কবিতা,&nbsp;যা&nbsp;কম্পিউটার&nbsp;সহজেই&nbsp;এক্সিকিউট&nbsp;করতে&nbsp;পারে&nbsp;এবং&nbsp;অন্য&nbsp;কোনো&nbsp;ডেভেলপার&nbsp;একবার&nbsp;পড়লেই&nbsp;বুঝতে&nbsp;পারে।&#8221; ২.&nbsp;ক্লিন&nbsp;আর্কিটেকচার&nbsp;এবং&nbsp;মডুলার&nbsp;কোডিং স্পিডে&nbsp;কোড&nbsp;লেখার&nbsp;অর্থ&nbsp;এই&nbsp;নয়&nbsp;যে&nbsp;স্প্যাগেটি&nbsp;কোড&nbsp;(Spaghetti&nbsp;Code)&nbsp;লিখতে&nbsp;হবে।&nbsp;বরং&nbsp;কোড&nbsp;স্ট্রাকচার&nbsp;এমন&nbsp;হওয়া&nbsp;উচিত&nbsp;যেন&nbsp;রি-ইউজ&nbsp;করা&nbsp;যায়।&nbsp;আপনি&nbsp;যদি&nbsp;ফ্লাটারে&nbsp;কাজ&nbsp;করেন,&nbsp;তবে&nbsp;ফিচার-বেসড&nbsp;ফোল্ডার&nbsp;স্ট্রাকচার&nbsp;ফলো&nbsp;করতে&nbsp;পারেন। অফিশিয়াল&nbsp;ডকুমেন্টেশনের&nbsp;জন্য&nbsp;সবসময়&nbsp;Flutter&nbsp;Official&nbsp;Documentation&nbsp;ফলো&nbsp;করুন।&nbsp;এটি&nbsp;আপনার&nbsp;লজিককে&nbsp;আরও&nbsp;শাণিত&nbsp;করতে&nbsp;সাহায্য&nbsp;করবে। // Clean Business Logic Example in Dart class UserAuthBloc { final FirebaseAuthService&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a7%87-%e0%a6%b2%e0%a6%9c%e0%a6%bf%e0%a6%95-%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a6%be%e0%a6%b8%e0%a7%8d/"><time class="entry-date published updated" datetime="2026-08-01T01:19:13+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-50 -->
+
+<article id="post-48" class="post-48 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0-flutter-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%ae%e0%a7%8b%e0%a6%ac%e0%a6%be%e0%a6%87%e0%a6%b2-%e0%a6%85%e0%a7%8d/" aria-hidden="true" tabindex="-1">
+				<img width="1672" height="941" src="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ফ্লাটার (Flutter) দিয়ে মোবাইল অ্যাপ ডেভেলপমেন্ট: শূন্য থেকে প্রো-লেভেল মাস্টারক্লাস" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM.png 1672w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM-300x169.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM-1024x576.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM-768x432.png 768w, https://techblog.site.je/wp-content/uploads/2026/08/ChatGPT-Image-Jul-31-2026-12_12_10-PM-1536x864.png 1536w" sizes="auto, (max-width: 1672px) 100vw, 1672px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0-flutter-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%ae%e0%a7%8b%e0%a6%ac%e0%a6%be%e0%a6%87%e0%a6%b2-%e0%a6%85%e0%a7%8d/" rel="bookmark">ফ্লাটার (Flutter) দিয়ে মোবাইল অ্যাপ ডেভেলপমেন্ট: শূন্য থেকে প্রো-লেভেল মাস্টারক্লাস</a></h2>				<div class="post-excerpt">
+					<p>মোবাইল&nbsp;অ্যাপ&nbsp;ডেভেলপমেন্ট&nbsp;জগতের&nbsp;বর্তমান&nbsp;সময়ের&nbsp;সবচেয়ে&nbsp;জনপ্রিয়&nbsp;এবং&nbsp;পাওয়ারফুল&nbsp;টেকনোলজিগুলোর&nbsp;একটি&nbsp;হলো&nbsp;গুগল-এর&nbsp;তৈরি&nbsp;ফ্রেমওয়ার্ক—ফ্লাটার&nbsp;(Flutter)।&nbsp;আপনি&nbsp;যদি&nbsp;একজন&nbsp;নতুন&nbsp;ডেভেলপার&nbsp;হন&nbsp;কিংবা&nbsp;আপনার&nbsp;ক্যারিয়ারকে&nbsp;ক্রস-প্ল্যাটফর্ম&nbsp;অ্যাপ&nbsp;ডেভেলপমেন্টের&nbsp;দিকে&nbsp;নিয়ে&nbsp;যেতে&nbsp;চান,&nbsp;তবে&nbsp;ফ্লাটার&nbsp;শেখা&nbsp;হতে&nbsp;পারে&nbsp;আপনার&nbsp;জীবনের&nbsp;অন্যতম&nbsp;সেরা&nbsp;একটি&nbsp;সিদ্ধান্ত।&nbsp;আজকের&nbsp;এই&nbsp;ইন-ডেপথ&nbsp;মাস্টারক্লাসে&nbsp;আমরা&nbsp;ফ্লাটারের&nbsp;মৌলিক&nbsp;ধারণা&nbsp;থেকে&nbsp;শুরু&nbsp;করে&nbsp;প্রো-লেভেল&nbsp;প্রজেক্ট&nbsp;তৈরির&nbsp;বিভিন্ন&nbsp;দিক&nbsp;নিয়ে&nbsp;বিস্তারিত&nbsp;আলোচনা&nbsp;করব। ফ্লাটার&nbsp;(Flutter)&nbsp;কী&nbsp;এবং&nbsp;কেন&nbsp;এটি&nbsp;ব্যবহার&nbsp;করবেন? ফ্লাটার&nbsp;হলো&nbsp;গুগলের&nbsp;একটি&nbsp;ওপেন&nbsp;সোর্স&nbsp;ইউআই&nbsp;(UI)&nbsp;ট্যুলকিট,&nbsp;যার&nbsp;সাহায্যে&nbsp;একক&nbsp;কোডবেজ&nbsp;(Single&nbsp;Codebase)&nbsp;ব্যবহার&nbsp;করে&nbsp;অত্যন্ত&nbsp;দ্রুত&nbsp;এবং&nbsp;চমৎকার&nbsp;পারফরম্যান্সের&nbsp;নেটিভ&nbsp;মোবাইল,&nbsp;ওয়েব&nbsp;এবং&nbsp;ডেস্কটপ&nbsp;অ্যাপ্লিকেশন&nbsp;তৈরি&nbsp;করা&nbsp;সম্ভব।&nbsp;এর&nbsp;মূল&nbsp;শক্তি&nbsp;হলো&nbsp;ডার্ট&nbsp;(Dart)&nbsp;প্রোগ্রামিং&nbsp;ভাষা&nbsp;এবং&nbsp;এর&nbsp;নিজস্ব&nbsp;রেন্ডারিং&nbsp;ইঞ্জিন&nbsp;(Skia&nbsp;/&nbsp;Impeller)। ঐতিহ্যগতভাবে&nbsp;অ্যান্ড্রয়েডের&nbsp;জন্য&nbsp;জাভা/কটলিন&nbsp;এবং&nbsp;আইওএসের&nbsp;জন্য&nbsp;অবজেক্টিভ-সি/সুইফট&nbsp;ব্যবহার&nbsp;করে&nbsp;আলাদা&nbsp;কোড&nbsp;লিখতে&nbsp;হতো।&nbsp;ফ্লাটার&nbsp;এই&nbsp;জটিলতা&nbsp;দূর&nbsp;করে&nbsp;এক&nbsp;কোডেই&nbsp;উভয়&nbsp;প্ল্যাটফর্মের&nbsp;জন্য&nbsp;অ্যাপ&nbsp;তৈরির&nbsp;সুযোগ&nbsp;করে&nbsp;দিয়েছে।&nbsp;ফ্লাটার&nbsp;সম্পর্কে&nbsp;আরও&nbsp;বিস্তারিত&nbsp;জানতে&nbsp;ঘুরে&nbsp;আসতে&nbsp;পারেন&nbsp;অফিসিয়াল&nbsp;ফ্লাটার&nbsp;ডকুমেন্টেশন&nbsp;থেকে। ফ্লাটারের&nbsp;প্রধান&nbsp;সুবিধাসমূহ: শুরু&nbsp;করার&nbsp;আগে:&nbsp;ডার্ট&nbsp;(Dart)&nbsp;প্রোগ্রামিং&nbsp;ভাষা ফ্লাটারে&nbsp;কোড&nbsp;করার&nbsp;জন্য&nbsp;আপনাকে&nbsp;ডার্ট&nbsp;ভাষা&nbsp;সম্পর্কে&nbsp;সম্যক&nbsp;ধারণা&nbsp;রাখতে&nbsp;হবে।&nbsp;ডার্ট&nbsp;হলো&nbsp;অবজেক্ট-ওরিয়েন্টেড&nbsp;এবং&nbsp;ক্লাসি-বেসড&nbsp;একটি&nbsp;প্রোগ্রামিং&nbsp;ল্যাঙ্গুয়েজ।&nbsp;জাভা&nbsp;বা&nbsp;সি++&nbsp;এর&nbsp;সাথে&nbsp;এর&nbsp;যথেষ্ট&nbsp;মিল&nbsp;রয়েছে।&nbsp;নিচে&nbsp;ডার্ট&nbsp;ভাষার&nbsp;একটি&nbsp;সাধারণ&nbsp;সিনট্যাক্স&nbsp;বা&nbsp;কোড&nbsp;ব্লক&nbsp;দেওয়া&nbsp;হলো: // ডার্ট ভাষায় একটি সাধারণ ফাংশন এবং ক্লাস void main() { Developer alamin&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0-flutter-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%ae%e0%a7%8b%e0%a6%ac%e0%a6%be%e0%a6%87%e0%a6%b2-%e0%a6%85%e0%a7%8d/"><time class="entry-date published updated" datetime="2026-08-01T01:18:17+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-48 -->
+
+<article id="post-46" class="post-46 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%b8%e0%a6%b9%e0%a6%9c%e0%a7%87%e0%a6%87-%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%be%e0%a6%ad%e0%a7%87%e0%a6%b2-laravel-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a7%8d%e0%a6%af%e0%a6%be/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_laldldlaldldlald.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="সহজেই লারাভেল (Laravel) শিখে ক্যারিয়ার গড়ুন: জিরো থেকে প্রফেশনাল ডেভেলপার হওয়ার গাইডলাইন" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_laldldlaldldlald.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_laldldlaldldlald-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_laldldlaldldlald-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_laldldlaldldlald-768x429.png 768w" sizes="auto, (max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%b8%e0%a6%b9%e0%a6%9c%e0%a7%87%e0%a6%87-%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%be%e0%a6%ad%e0%a7%87%e0%a6%b2-laravel-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a7%8d%e0%a6%af%e0%a6%be/" rel="bookmark">সহজেই লারাভেল (Laravel) শিখে ক্যারিয়ার গড়ুন: জিরো থেকে প্রফেশনাল ডেভেলপার হওয়ার গাইডলাইন</a></h2>				<div class="post-excerpt">
+					<p>ওয়েব&nbsp;ডেভেলপমেন্ট&nbsp;দুনিয়ায়&nbsp;বর্তমান&nbsp;সময়ে&nbsp;সবচেয়ে&nbsp;জনপ্রিয়&nbsp;এবং&nbsp;শক্তিশালী&nbsp;পিএইচপি&nbsp;(PHP)&nbsp;ফ্রেমওয়ার্কগুলোর&nbsp;একটি&nbsp;হলো&nbsp;লারাভেল&nbsp;(Laravel)।&nbsp;আপনি&nbsp;যদি&nbsp;জিরো&nbsp;থেকে&nbsp;শুরু&nbsp;করে&nbsp;একজন&nbsp;দক্ষ&nbsp;ও&nbsp;প্রফেশনাল&nbsp;ব্যাকএন্ড&nbsp;বা&nbsp;ফুল-স্ট্যাক&nbsp;ডেভেলপার&nbsp;হতে&nbsp;চান,&nbsp;তবে&nbsp;লারাভেল&nbsp;শেখা&nbsp;আপনার&nbsp;জন্য&nbsp;হতে&nbsp;পারে&nbsp;একটি&nbsp;যুগান্তকারী&nbsp;সিদ্ধান্ত।&nbsp;আজকের&nbsp;এই&nbsp;বিস্তারিত&nbsp;গাইডলাইনে&nbsp;আমরা&nbsp;ধাপে&nbsp;ধাপে&nbsp;আলোচনা&nbsp;করব&nbsp;কীভাবে&nbsp;লারাভেল&nbsp;আয়ত্ত&nbsp;করে&nbsp;নিজের&nbsp;ক্যারিয়ারকে&nbsp;একটি&nbsp;শক্ত&nbsp;অবস্থানে&nbsp;নিয়ে&nbsp;যাওয়া&nbsp;যায়। কেন&nbsp;লারাভেল&nbsp;(Laravel)&nbsp;শিখবেন? টেইলর&nbsp;ওয়েটওয়েল&nbsp;(Taylor&nbsp;Otwell)&nbsp;কর্তৃক&nbsp;২০১১&nbsp;সালে&nbsp;প্রকাশিত&nbsp;লারাভেল&nbsp;আজ&nbsp;কোটি&nbsp;কোটি&nbsp;ডেভেলপারদের&nbsp;প্রথম&nbsp;পছন্দ।&nbsp;এর&nbsp;প্রধান&nbsp;কারণগুলো&nbsp;নিচে&nbsp;দেওয়া&nbsp;হলো: জিরো&nbsp;থেকে&nbsp;লারাভেল&nbsp;শেখার&nbsp;রোডম্যাপ লারাভেল&nbsp;শেখার&nbsp;আগে&nbsp;আপনাকে&nbsp;কিছু&nbsp;পূর্বপ্রস্তুতি&nbsp;নিতে&nbsp;হবে।&nbsp;আপনি&nbsp;যদি&nbsp;সরাসরি&nbsp;লারাভেলে&nbsp;ঝাঁপিয়ে&nbsp;পড়েন,&nbsp;তবে&nbsp;সমস্যায়&nbsp;পড়বেন।&nbsp;নিচে&nbsp;একটি&nbsp;স্টেপ-বাই-স্টেপ&nbsp;রোডম্যাপ&nbsp;দেওয়া&nbsp;হলো: ১.&nbsp;বেসিক&nbsp;পিএইচপি&nbsp;এবং&nbsp;অবজেক্ট&nbsp;ওরিয়েন্টেড&nbsp;প্রোগ্রামিং&nbsp;(OOP) লারাভেল&nbsp;একটি&nbsp;পিএইচপি&nbsp;ফ্রেমওয়ার্ক।&nbsp;তাই&nbsp;পিএইচপি-এর&nbsp;বেসিক&nbsp;সিনট্যাক्स,&nbsp;ভেরিয়েবল,&nbsp;লুপ,&nbsp;ফাংশন&nbsp;এবং&nbsp;অবশ্যই&nbsp;OOP&nbsp;(Object&nbsp;Oriented&nbsp;Programming)&nbsp;যেমন-&nbsp;ক্লাস,&nbsp;অবজেক্ট,&nbsp;ইনহেরিট্যান্স,&nbsp;পলিমারফিজম&nbsp;সম্পর্কে&nbsp;স্পষ্ট&nbsp;ধারণা&nbsp;থাকতে&nbsp;হবে। ২.&nbsp;কম্পোজার&nbsp;(Composer)&nbsp;এবং&nbsp;ডেটাবেস পিএইচপি&nbsp;ডিপেন্ডেন্সি&nbsp;ম্যানেজার&nbsp;হিসেবে&nbsp;Composer&nbsp;এর&nbsp;ব্যবহার&nbsp;জানতে&nbsp;হবে।&nbsp;পাশাপাশি&nbsp;MySQL&nbsp;বা&nbsp;PostgreSQL&nbsp;ডেটাবেসের&nbsp;বেসিক&nbsp;কুয়েরি&nbsp;এবং&nbsp;রিলেশনাল&nbsp;ডেটাবেস&nbsp;ডিজাইন&nbsp;(One-to-Many,&nbsp;Many-to-Many)&nbsp;সম্পর্কে&nbsp;পরিষ্কার&nbsp;ধারণা&nbsp;থাকা&nbsp;জরুরি। ৩.&nbsp;লারাভেলের&nbsp;বেসিক&nbsp;কনসেপ্ট যখন&nbsp;আপনার&nbsp;পিএইচপি&nbsp;এবং&nbsp;ডেটাবেস&nbsp;ক্লিয়ার,&nbsp;তখন&nbsp;অফিশিয়াল&nbsp;Laravel&nbsp;Documentation&nbsp;অনুসরণ&nbsp;করে&nbsp;নিচের&nbsp;বিষয়গুলো&nbsp;শিখুন: নিচে&nbsp;লারাভেলের&nbsp;একটি&nbsp;সিম্পল&nbsp;রাউট&nbsp;এবং&nbsp;কন্ট্রোলারের&nbsp;উদাহরণ&nbsp;দেওয়া&nbsp;হলো: // routes/web.php use App\Http\Controllers\ProfileController; Route::get(&#039;/profile&#039;, [ProfileController::class, &#039;show&#039;]); একটি&nbsp;প্রফেশনাল&nbsp;প্রজেক্ট&nbsp;দিয়ে&nbsp;শুরু&nbsp;করুন&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%b8%e0%a6%b9%e0%a6%9c%e0%a7%87%e0%a6%87-%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%be%e0%a6%ad%e0%a7%87%e0%a6%b2-laravel-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a7%8d%e0%a6%af%e0%a6%be/"><time class="entry-date published updated" datetime="2026-08-01T01:17:03+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							2 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-46 -->
+
+<article id="post-44" class="post-44 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%a1%e0%a6%bc%e0%a6%be%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be-%e0%a6%ad%e0%a6%be%e0%a6%b2%e0%a7%8b-%e0%a6%a8%e0%a6%be-%e0%a6%b2%e0%a6%be%e0%a6%97%e0%a6%b2%e0%a7%87-%e0%a6%86%e0%a6%9c/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_9musvx9musvx9mus.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="পড়ালেখা ভালো না লাগলে আজকেই কোডিং শিখে নিজের ভবিষ্যত গড়ো: প্রথাগত শিক্ষার বাইরে সফল ক্যারিয়ার গড়ার গাইডলাইন" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_9musvx9musvx9mus.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_9musvx9musvx9mus-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_9musvx9musvx9mus-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_9musvx9musvx9mus-768x429.png 768w" sizes="auto, (max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%a1%e0%a6%bc%e0%a6%be%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be-%e0%a6%ad%e0%a6%be%e0%a6%b2%e0%a7%8b-%e0%a6%a8%e0%a6%be-%e0%a6%b2%e0%a6%be%e0%a6%97%e0%a6%b2%e0%a7%87-%e0%a6%86%e0%a6%9c/" rel="bookmark">পড়ালেখা ভালো না লাগলে আজকেই কোডিং শিখে নিজের ভবিষ্যত গড়ো: প্রথাগত শিক্ষার বাইরে সফল ক্যারিয়ার গড়ার গাইডলাইন</a></h2>				<div class="post-excerpt">
+					<p>আমাদের&nbsp;সমাজে&nbsp;ছোটবেলা&nbsp;থেকেই&nbsp;একটি&nbsp;প্রচলিত&nbsp;ধারণা&nbsp;রয়েছে—ভালো&nbsp;জিপিএ&nbsp;(GPA)&nbsp;না&nbsp;পেলে&nbsp;জীবনে&nbsp;বড়&nbsp;কিছু&nbsp;হওয়া&nbsp;যায়&nbsp;না।&nbsp;সনাতন&nbsp;শিক্ষা&nbsp;ব্যবস্থার&nbsp;মুখস্থ&nbsp;বিদ্যা,&nbsp;পরীক্ষার&nbsp;খাতার&nbsp;নম্বর&nbsp;এবং&nbsp;জিপিএর&nbsp;ইঁদুর&nbsp;দৌড়ে&nbsp;যখন&nbsp;অনেকেই&nbsp;হাঁপিয়ে&nbsp;ওঠেন,&nbsp;তখন&nbsp;তাদের&nbsp;মনে&nbsp;প্রশ্ন&nbsp;জাগে—&#8220;সত্যিই&nbsp;কি&nbsp;পড়ালেখা&nbsp;ভালো&nbsp;না&nbsp;লাগলে&nbsp;আমার&nbsp;জীবন&nbsp;শেষ?&#8221; উত্তর&nbsp;হলো—না,&nbsp;একদমই&nbsp;না!&nbsp;একবিংশ&nbsp;শতাব্দীতে&nbsp;এসে&nbsp;ডিগ্রির&nbsp;চেয়ে&nbsp;স্কিল&nbsp;বা&nbsp;দক্ষতার&nbsp;মূল্য&nbsp;শতগুণ&nbsp;বেশি।&nbsp;আজ&nbsp;গোগল&nbsp;(Google),&nbsp;অ্যাপল&nbsp;(Apple),&nbsp;মেটা&nbsp;(Meta)-র&nbsp;মতো&nbsp;বিশ্বমানের&nbsp;টেক&nbsp;জায়ান্টগুলোও&nbsp;সার্টিফিকেট&nbsp;নয়,&nbsp;বরং&nbsp;ক্যান্ডিডেটের&nbsp;কোডিং&nbsp;দক্ষতা&nbsp;এবং&nbsp;প্রবলেম&nbsp;সলভিং&nbsp;অ্যাবিলিটি&nbsp;দেখে&nbsp;নিয়োগ&nbsp;দিচ্ছে।&nbsp;আপনি&nbsp;যদি&nbsp;পড়াশোনায়&nbsp;বোরিং&nbsp;ফিল&nbsp;করেন,&nbsp;তবে&nbsp;আপনার&nbsp;জন্য&nbsp;রয়েছে&nbsp;অন্য&nbsp;এক&nbsp;সম্ভাবনার&nbsp;দুয়ার—আর&nbsp;তা&nbsp;হলো&nbsp;প্রোগ্রামিং&nbsp;বা&nbsp;কোডিং। কেন&nbsp;প্রথাগত&nbsp;শিক্ষার&nbsp;বাইরে&nbsp;কোডিং&nbsp;একটি&nbsp;চমৎকার&nbsp;ক্যারিয়ার? প্রথাগত&nbsp;শিক্ষা&nbsp;আমাদের&nbsp;অনেক&nbsp;কিছু&nbsp;শেখায়,&nbsp;কিন্তু&nbsp;আধুনিক&nbsp;প্রযুক্তির&nbsp;যুগে&nbsp;দ্রুত&nbsp;বদলে&nbsp;যাওয়া&nbsp;ইন্ডাস্ট্রির&nbsp;চাহিদা&nbsp;মেটাতে&nbsp;এটি&nbsp;অনেক&nbsp;সময়&nbsp;ব্যর্থ&nbsp;হয়।&nbsp;অন্যদিকে,&nbsp;কোডিং&nbsp;শেখার&nbsp;কোনো&nbsp;নির্দিষ্ট&nbsp;বয়স&nbsp;বা&nbsp;প্রাতিষ্ঠানিক&nbsp;ডিগ্রির&nbsp;প্রয়োজন&nbsp;নেই।&nbsp;আপনার&nbsp;প্রয়োজন&nbsp;শুধু&nbsp;একটি&nbsp;ল্যাপটপ,&nbsp;ইন্টারনেট&nbsp;সংযোগ&nbsp;এবং&nbsp;শেখার&nbsp;অদম্য&nbsp;ইচ্ছা। কোডিং&nbsp;জার্নি&nbsp;শুরু&nbsp;করার&nbsp;প্রথম&nbsp;ধাপ কোডিং&nbsp;শেখা&nbsp;শুরু&nbsp;করার&nbsp;জন্য&nbsp;আপনাকে&nbsp;কম্পিউটার&nbsp;বিজ্ঞান&nbsp;বা&nbsp;আইটিতে&nbsp;মাস্টার্স&nbsp;করতে&nbsp;হবে&nbsp;না।&nbsp;আপনি&nbsp;ঘরে&nbsp;বসেই&nbsp;ইন্টারনেট&nbsp;থেকে&nbsp;সম্পূর্ণ&nbsp;বিনামূল্যে&nbsp;প্রোগ্রামিং&nbsp;ভাষা&nbsp;শিখতে&nbsp;পারেন।&nbsp;নিচে&nbsp;একটি&nbsp;সাধারণ&nbsp;ওয়েব&nbsp;ডেভেলপমেন্ট&nbsp;রোডম্যাপ&nbsp;দেওয়া&nbsp;হলো: &#8220;কোডিং&nbsp;কেবল&nbsp;কিছু&nbsp;কোড&nbsp;টাইপ&nbsp;করা&nbsp;নয়,&nbsp;এটি&nbsp;হলো&nbsp;যৌক্তিকভাবে&nbsp;কোনো&nbsp;সমস্যার&nbsp;সমাধান&nbsp;বের&nbsp;করা।&#8221;&nbsp;—&nbsp;মুহম্মদ&nbsp;আল-আমিন একটি&nbsp;সহজ&nbsp;কোডিং&nbsp;উদাহরণ প্রোগ্রামিং&nbsp;কতটা&nbsp;সহজ&nbsp;ও&nbsp;আকর্ষণীয়&nbsp;হতে&nbsp;পারে,&nbsp;তার&nbsp;একটি&nbsp;ছোট&nbsp;উদাহরণ&nbsp;নিচে&nbsp;জাভাস্ক্রিপ্টে&nbsp;(JavaScript)&nbsp;দেওয়া&nbsp;হলো: // একটি আধুনিক ওয়েব অ্যাপ্লিকেশনের ছোট্ট ফাংশন function greetDeveloper(name) { const&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%a1%e0%a6%bc%e0%a6%be%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be-%e0%a6%ad%e0%a6%be%e0%a6%b2%e0%a7%8b-%e0%a6%a8%e0%a6%be-%e0%a6%b2%e0%a6%be%e0%a6%97%e0%a6%b2%e0%a7%87-%e0%a6%86%e0%a6%9c/"><time class="entry-date published updated" datetime="2026-08-01T01:16:02+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							2 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-44 -->
+
+<article id="post-42" class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%be%e0%a6%87%e0%a6%a5%e0%a6%a8-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a7%8b%e0%a6%97%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%ae%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_nd2y8tnd2y8tnd2y.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="পাইথন প্রোগ্রামিং শেখার সহজ ও কার্যকরী গাইড: শূন্য থেকে দক্ষ ডেভেলপার হওয়ার পথচলা" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_nd2y8tnd2y8tnd2y.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_nd2y8tnd2y8tnd2y-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_nd2y8tnd2y8tnd2y-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_nd2y8tnd2y8tnd2y-768x429.png 768w" sizes="auto, (max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%be%e0%a6%87%e0%a6%a5%e0%a6%a8-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a7%8b%e0%a6%97%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%ae%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0/" rel="bookmark">পাইথন প্রোগ্রামিং শেখার সহজ ও কার্যকরী গাইড: শূন্য থেকে দক্ষ ডেভেলপার হওয়ার পথচলা</a></h2>				<div class="post-excerpt">
+					<p>প্রোগ্রামিং&nbsp;দুনিয়ায়&nbsp;বর্তমান&nbsp;সময়ে&nbsp;সবচেয়ে&nbsp;জনপ্রিয়&nbsp;এবং&nbsp;চাহিদসম্পন্ন&nbsp;ভাষাগুলোর&nbsp;মধ্যে&nbsp;পাইথন&nbsp;(Python)&nbsp;সবার&nbsp;উপরে&nbsp;অবস্থান&nbsp;করছে।&nbsp;আপনি&nbsp;যদি&nbsp;একদম&nbsp;শূন্য&nbsp;থেকে&nbsp;প্রোগ্রামিং&nbsp;শুরু&nbsp;করতে&nbsp;চান,&nbsp;তবে&nbsp;পাইথন&nbsp;হতে&nbsp;পারে&nbsp;আপনার&nbsp;জন্য&nbsp;সেরা&nbsp;পছন্দ।&nbsp;এর&nbsp;সহজ&nbsp;সিনট্যাক্স&nbsp;এবং&nbsp;মানব&nbsp;ভাষার&nbsp;সাথে&nbsp;মিল&nbsp;থাকার&nbsp;কারণে&nbsp;এটি&nbsp;নতুনদের&nbsp;জন্য&nbsp;অত্যন্ত&nbsp;উপযোগী।&nbsp;একজন&nbsp;ডিজিটাল&nbsp;সলিউশন&nbsp;আর্কিটেক্ট&nbsp;হিসেবে&nbsp;আমি&nbsp;সবসময়ই&nbsp;নতুন&nbsp;ডেভেলপারদের&nbsp;পাইথন&nbsp;দিয়ে&nbsp;তাদের&nbsp;কোডিং&nbsp;জার্নি&nbsp;শুরু&nbsp;করার&nbsp;পরামর্শ&nbsp;দিই। কেন&nbsp;পাইথন&nbsp;প্রোগ্রামিং&nbsp;শিখবেন? পাইথন&nbsp;শেখার&nbsp;পেছনে&nbsp;রয়েছে&nbsp;অসংখ্য&nbsp;জোরালো&nbsp;কারণ।&nbsp;এটি&nbsp;বহুমুখী&nbsp;(Versatile)&nbsp;একটি&nbsp;ভাষা&nbsp;যা&nbsp;ওয়েব&nbsp;ডেভেলপমেন্ট,&nbsp;ডেটা&nbsp;সায়েন্স,&nbsp;আর্টিফিশিয়াল&nbsp;ইন্টেলিজেন্স&nbsp;(AI),&nbsp;মেশিন&nbsp;লার্নিং,&nbsp;অটোমেশন&nbsp;এবং&nbsp;সাইবার&nbsp;সিকিউরিটির&nbsp;মতো&nbsp;সেক্টরে&nbsp;ব্যাপকভাবে&nbsp;ব্যবহৃত&nbsp;হয়।&nbsp;পাইথনের&nbsp;মূল&nbsp;সুবিধাগুলো&nbsp;নিচে&nbsp;আলোচনা&nbsp;করা&nbsp;হলো: শূন্য&nbsp;থেকে&nbsp;পাইথন&nbsp;শেখার&nbsp;স্টেপ-বাই-স্টেপ&nbsp;গাইড সঠিক&nbsp;দিকনির্দেশনা&nbsp;ছাড়া&nbsp;প্রোগ্রামিং&nbsp;শেখা&nbsp;কঠিন&nbsp;হতে&nbsp;পারে।&nbsp;তাই&nbsp;নিচে&nbsp;একটি&nbsp;কার্যকরী&nbsp;রোডম্যাপ&nbsp;দেওয়া&nbsp;হলো: ১.&nbsp;বেসিক&nbsp;কনসেপ্ট&nbsp;আয়ত্ত&nbsp;করা যেকোনো&nbsp;ভাষা&nbsp;শেখার&nbsp;আগে&nbsp;তার&nbsp;মৌলিক&nbsp;বিষয়গুলো&nbsp;পরিষ্কার&nbsp;করতে&nbsp;হয়।&nbsp;পাইথনের&nbsp;ক্ষেত্রে&nbsp;আপনাকে&nbsp;নিচের&nbsp;বিষয়গুলো&nbsp;ভালোমতো&nbsp;বুঝতে&nbsp;হবে: নিচে&nbsp;পাইথনের&nbsp;একটি&nbsp;সাধারণ&nbsp;কোড&nbsp;স্নিপেট&nbsp;দেওয়া&nbsp;হলো: # পাইথনে একটি সাধারণ ফাংশনের উদাহরণ def greet_developer(name): print(f&quot;হ্যালো, {name}! পাইথন দুনিয়ায়&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%aa%e0%a6%be%e0%a6%87%e0%a6%a5%e0%a6%a8-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a7%8b%e0%a6%97%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%ae%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0/"><time class="entry-date published updated" datetime="2026-08-01T01:14:58+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							2 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-42 -->
+
+<article id="post-40" class="post-40 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a7%a8%e0%a7%a6%e0%a7%a8%e0%a7%ac-%e0%a6%b8%e0%a6%be%e0%a6%b2%e0%a7%87-%e0%a6%8f%e0%a6%b8%e0%a7%87-%e0%a6%8f%e0%a6%95%e0%a6%9c%e0%a6%a8-%e0%a6%ad%e0%a6%be%e0%a6%87%e0%a6%ac-%e0%a6%95%e0%a7%8b/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_uyq61puyq61puyq6.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="২০২৬ সালে এসে একজন ভাইব কোডারের ভ্যালু আসলে কতটুকু? রিয়েলিটি চেক এবং ফিউচার আউটলুক" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_uyq61puyq61puyq6.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_uyq61puyq61puyq6-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_uyq61puyq61puyq6-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_uyq61puyq61puyq6-768x429.png 768w" sizes="auto, (max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a7%a8%e0%a7%a6%e0%a7%a8%e0%a7%ac-%e0%a6%b8%e0%a6%be%e0%a6%b2%e0%a7%87-%e0%a6%8f%e0%a6%b8%e0%a7%87-%e0%a6%8f%e0%a6%95%e0%a6%9c%e0%a6%a8-%e0%a6%ad%e0%a6%be%e0%a6%87%e0%a6%ac-%e0%a6%95%e0%a7%8b/" rel="bookmark">২০২৬ সালে এসে একজন ভাইব কোডারের ভ্যালু আসলে কতটুকু? রিয়েলিটি চেক এবং ফিউচার আউটলুক</a></h2>				<div class="post-excerpt">
+					<p>টেকনোলজি&nbsp;ওয়ার্ল্ড&nbsp;খুব&nbsp;দ্রুত&nbsp;পরিবর্তন&nbsp;হচ্ছে।&nbsp;আমরা&nbsp;যদি&nbsp;আজকের&nbsp;এই&nbsp;বছরটিকে&nbsp;অর্থাৎ&nbsp;২০২৬&nbsp;সালকে&nbsp;পেছনের&nbsp;বছরগুলোর&nbsp;সাথে&nbsp;তুলনা&nbsp;করি,&nbsp;তবে&nbsp;দেখতে&nbsp;পাব&nbsp;কোডিং&nbsp;বা&nbsp;সফটওয়্যার&nbsp;ডেভেলপমেন্টের&nbsp;সংজ্ঞাটাই&nbsp;সম্পূর্ণ&nbsp;বদলে&nbsp;গেছে।&nbsp;কিছুদিন&nbsp;আগেও&nbsp;যেখানে&nbsp;একটি&nbsp;প্রজেক্ট&nbsp;দাঁড়&nbsp;করাতে&nbsp;শত&nbsp;শত&nbsp;লাইন&nbsp;কোড&nbsp;লিখতে&nbsp;হতো,&nbsp;সেখানে&nbsp;এখন&nbsp;&#8216;ভাইব&nbsp;কোডিং&#8217;&nbsp;(Vibe&nbsp;Coding)&nbsp;নামক&nbsp;এক&nbsp;নতুন&nbsp;ট্রেন্ড&nbsp;বেশ&nbsp;ভালোই&nbsp;সাড়া&nbsp;ফেলেছে।&nbsp;কিন্তু&nbsp;প্রশ্ন&nbsp;হলো—২০২৬&nbsp;সালে&nbsp;এসে&nbsp;এই&nbsp;তথাকথিত&nbsp;&#8216;ভাইব&nbsp;কোডারদের&#8217;&nbsp;রিয়েল-ওয়ার্ল্ড&nbsp;ভ্যালু&nbsp;বা&nbsp;বাজারমূল্য&nbsp;আসলে&nbsp;ঠিক&nbsp;কতটুকু? ভাইব&nbsp;কোডিং&nbsp;আসলে&nbsp;কী? সহজ&nbsp;ভাষায়&nbsp;বলতে&nbsp;গেলে,&nbsp;ভাইব&nbsp;কোডিং&nbsp;হলো&nbsp;এমন&nbsp;একটি&nbsp;পদ্ধতি&nbsp;যেখানে&nbsp;ডেভেলপাররা&nbsp;নিজে&nbsp;হাতে&nbsp;কোডের&nbsp;প্রতিটি&nbsp;সিনট্যাক্স&nbsp;লেখার&nbsp;চেয়ে&nbsp;কৃত্রিম&nbsp;বুদ্ধিমত্তা&nbsp;বা&nbsp;AI-এর&nbsp;সাথে&nbsp;প্রম্পট&nbsp;আদান-প্রদানের&nbsp;মাধ্যমে&nbsp;অ্যাপ্লিকেশনের&nbsp;লজিক&nbsp;তৈরি&nbsp;করেন।&nbsp;আপনি&nbsp;কেবল&nbsp;আপনার&nbsp;আইডিয়া&nbsp;শেয়ার&nbsp;করবেন,&nbsp;আর&nbsp;AI&nbsp;ব্যাকএন্ড&nbsp;বা&nbsp;ফ্রন্টএন্ড&nbsp;কোড&nbsp;জেনারেট&nbsp;করে&nbsp;দেবে।&nbsp;এটি&nbsp;শুনতে&nbsp;জাদুর&nbsp;মতো&nbsp;মনে&nbsp;হতে&nbsp;পারে,&nbsp;এবং&nbsp;বর্তমানের&nbsp;উন্নত&nbsp;লার্জ&nbsp;ল্যাঙ্গুয়েজ&nbsp;মডেলগুলোর&nbsp;কারণে&nbsp;এটি&nbsp;এখন&nbsp;হাতের&nbsp;নাগালে। তবে&nbsp;এই&nbsp;সহজলভ্যতার&nbsp;কারণে&nbsp;অনেকের&nbsp;মাঝেই&nbsp;একটি&nbsp;ভ্রান্ত&nbsp;ধারণা&nbsp;তৈরি&nbsp;হয়েছে&nbsp;যে—&#8221;কোডিং&nbsp;শেখার&nbsp;দিন&nbsp;বুঝি&nbsp;শেষ!&#8221;&nbsp;চলুন,&nbsp;এই&nbsp;বিষয়টি&nbsp;নিয়ে&nbsp;একটু&nbsp;গভীরে&nbsp;যাওয়া&nbsp;যাক&nbsp;এবং&nbsp;২০২৬&nbsp;সালের&nbsp;রিয়েলিটি&nbsp;চেক&nbsp;করা&nbsp;যাক। বর্তমান&nbsp;মার্কেটে&nbsp;ভাইব&nbsp;কোডারদের&nbsp;ভ্যালু:&nbsp;অনুপাত&nbsp;বনাম&nbsp;বাস্তবতা একটি&nbsp;স্কেলেবল&nbsp;এবং&nbsp;সিকিউরড&nbsp;সিস্টেম&nbsp;দাঁড়&nbsp;করানোর&nbsp;ক্ষেত্রে&nbsp;শুধুমাত্র&nbsp;ভাইব&nbsp;কোডিং&nbsp;দিয়ে&nbsp;কি&nbsp;সব&nbsp;করা&nbsp;সম্ভব?&nbsp;উত্তর&nbsp;হলো—না।&nbsp;নিচে&nbsp;কয়েকটি&nbsp;প্রধান&nbsp;কারণ&nbsp;তুলে&nbsp;ধরা&nbsp;হলো&nbsp;কেন&nbsp;প্রথাগত&nbsp;প্রোগ্রামিং&nbsp;এবং&nbsp;আর্কিটেকচারাল&nbsp;নলেজ&nbsp;এখনো&nbsp;অপরিহার্য: একটি&nbsp;বাস্তবসম্মত&nbsp;কোড&nbsp;উদাহরণ:&nbsp;প্রম্পট&nbsp;বনাম&nbsp;সল্যুশন ধরা&nbsp;যাক,&nbsp;আপনি&nbsp;একটি&nbsp;রিয়েল-টাইম&nbsp;চ্যাট&nbsp;অ্যাপ্লিকেশন&nbsp;তৈরি&nbsp;করছেন।&nbsp;একজন&nbsp;ভাইব&nbsp;কোডার&nbsp;কেবল&nbsp;বেসিক&nbsp;চ্যাট&nbsp;ইন্টারফেসের&nbsp;প্রম্পট&nbsp;দিয়ে&nbsp;কোড&nbsp;জেনারেট&nbsp;করতে&nbsp;পারেন: // ভাইব কোডারদের জেনারেটেড সিম্পল কোড const socket = io(&#039;https://chat-backend.com&#039;); socket.on(&#039;message&#039;, (data)&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a7%a8%e0%a7%a6%e0%a7%a8%e0%a7%ac-%e0%a6%b8%e0%a6%be%e0%a6%b2%e0%a7%87-%e0%a6%8f%e0%a6%b8%e0%a7%87-%e0%a6%8f%e0%a6%95%e0%a6%9c%e0%a6%a8-%e0%a6%ad%e0%a6%be%e0%a6%87%e0%a6%ac-%e0%a6%95%e0%a7%8b/"><time class="entry-date published updated" datetime="2026-08-01T01:14:00+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-40 -->
+
+<article id="post-38" class="post-38 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+	<div class="blog-post-container">
+		<div class="blog-post-inner">
+			<div class="blog-post-image">
+				
+			<a class="post-thumbnail" href="https://techblog.site.je/2026/08/01/%e0%a6%86%e0%a6%ae%e0%a6%bf-%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a6%a4%e0%a7%87-%e0%a6%9a%e0%a6%be%e0%a6%87-%e0%a6%95%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%a4/" aria-hidden="true" tabindex="-1">
+				<img width="1376" height="768" src="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_82sywd82sywd82sy.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="আমি কোডিং শিখতে চাই কিন্তু কোথা থেকে শুরু করব বুঝতে পারছি না! নতুনদের জন্য একটি সম্পূর্ণ গাইডলাইন" decoding="async" loading="lazy" srcset="https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_82sywd82sywd82sy.png 1376w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_82sywd82sywd82sy-300x167.png 300w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_82sywd82sywd82sy-1024x572.png 1024w, https://techblog.site.je/wp-content/uploads/2026/08/Gemini_Generated_Image_82sywd82sywd82sy-768x429.png 768w" sizes="auto, (max-width: 1376px) 100vw, 1376px" />			</a>
+
+						</div>
+			<div class="blog-post-detail">
+				<div class="post-categories">
+					<span class="cat-links"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a></span>				</div>
+				<h2 class="entry-title"><a href="https://techblog.site.je/2026/08/01/%e0%a6%86%e0%a6%ae%e0%a6%bf-%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a6%a4%e0%a7%87-%e0%a6%9a%e0%a6%be%e0%a6%87-%e0%a6%95%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%a4/" rel="bookmark">আমি কোডিং শিখতে চাই কিন্তু কোথা থেকে শুরু করব বুঝতে পারছি না! নতুনদের জন্য একটি সম্পূর্ণ গাইডলাইন</a></h2>				<div class="post-excerpt">
+					<p>বর্তমান&nbsp;যুগ&nbsp;প্রযুক্তির&nbsp;যুগ।&nbsp;আর&nbsp;এই&nbsp;প্রযুক্তির&nbsp;মূল&nbsp;চালিকাশক্তি&nbsp;হলো&nbsp;কোডিং&nbsp;বা&nbsp;প্রোগ্রামিং।&nbsp;প্রতিদিন&nbsp;হাজার&nbsp;হাজার&nbsp;তরুণ-তরুণী&nbsp;নিজেদের&nbsp;ক্যারিয়ার&nbsp;গড়ার&nbsp;জন্য&nbsp;বা&nbsp;নতুন&nbsp;কিছু&nbsp;তৈরি&nbsp;করার&nbsp;নেশায়&nbsp;প্রোগ্রামিং&nbsp;জগতে&nbsp;পা&nbsp;রাখতে&nbsp;চান।&nbsp;কিন্তু&nbsp;তাদের&nbsp;সবার&nbsp;মনেই&nbsp;একটি&nbsp;কমন&nbsp;প্রশ্ন&nbsp;ঘুরেফিরে&nbsp;আসে—&nbsp;&#8220;আমি&nbsp;কোডিং&nbsp;শিখতে&nbsp;চাই,&nbsp;কিন্তু&nbsp;কোথা&nbsp;থেকে&nbsp;শুরু&nbsp;করব&nbsp;বুঝতে&nbsp;পারছি&nbsp;না!&#8221; এই&nbsp;কনফিউশনটি&nbsp;খুবই&nbsp;স্বাভাবিক।&nbsp;ইন্টারনেটে&nbsp;হাজারো&nbsp;ল্যাঙ্গুয়েজ,&nbsp;ফ্রেমওয়ার্ক&nbsp;এবং&nbsp;রোডম্যাপ&nbsp;দেখে&nbsp;যে&nbsp;কারও&nbsp;মাথা&nbsp;ঘুরে&nbsp;যেতে&nbsp;পারে।&nbsp;আপনি&nbsp;যদি&nbsp;একদম&nbsp;শূন্য&nbsp;থেকে&nbsp;শুরু&nbsp;করতে&nbsp;চান,&nbsp;তবে&nbsp;সঠিক&nbsp;দিকনির্দেশনা&nbsp;বা&nbsp;গাইডলাইন&nbsp;থাকাটা&nbsp;অত্যন্ত&nbsp;জরুরি।&nbsp;আজকের&nbsp;এই&nbsp;ব্লগে&nbsp;আমরা&nbsp;একদম&nbsp;জিরো&nbsp;থেকে&nbsp;কীভাবে&nbsp;আপনার&nbsp;কোডিং&nbsp;জার্নি&nbsp;শুরু&nbsp;করবেন,&nbsp;তার&nbsp;একটি&nbsp;স্টেপ-বাই-স্টেপ&nbsp;সমাধান&nbsp;নিয়ে&nbsp;আলোচনা&nbsp;করব। ১.&nbsp;প্রথমে&nbsp;আপনার&nbsp;লক্ষ্য&nbsp;ঠিক&nbsp;করুন&nbsp;(Define&nbsp;Your&nbsp;Goal) কোডিং&nbsp;শেখার&nbsp;আগে&nbsp;আপনাকে&nbsp;ঠিক&nbsp;করতে&nbsp;হবে&nbsp;আপনি&nbsp;আসলে&nbsp;কী&nbsp;তৈরি&nbsp;করতে&nbsp;চান।&nbsp;কারণ&nbsp;প্রোগ্রামিংয়ের&nbsp;অনেকগুলো&nbsp;সেক্টর&nbsp;রয়েছে।&nbsp;যেমন: আপনি&nbsp;যদি&nbsp;ওয়েবসাইট&nbsp;বা&nbsp;অ্যাপস&nbsp;তৈরি&nbsp;করতে&nbsp;আগ্রহী&nbsp;হন,&nbsp;তবে&nbsp;আপনার&nbsp;ফোকাস&nbsp;হওয়া&nbsp;উচিত&nbsp;MDN&nbsp;Web&nbsp;Docs&nbsp;এর&nbsp;মতো&nbsp;বিশ্বস্ত&nbsp;সোর্স&nbsp;থেকে&nbsp;সঠিক&nbsp;প্রযুক্তির&nbsp;সাথে&nbsp;পরিচিত&nbsp;হওয়া। ২.&nbsp;কোন&nbsp;ল্যাঙ্গুয়েজ&nbsp;দিয়ে&nbsp;শুরু&nbsp;করা&nbsp;উচিত? নতুনদের&nbsp;জন্য&nbsp;প্রোগ্রামিংয়ের&nbsp;বেসিক&nbsp;ক্লিয়ার&nbsp;করার&nbsp;জন্য&nbsp;সবচেয়ে&nbsp;জনপ্রিয়&nbsp;এবং&nbsp;সহজ&nbsp;ল্যাঙ্গুয়েজ&nbsp;হলো&nbsp;Python&nbsp;অথবা&nbsp;ওয়েব&nbsp;ডেভেলপমেন্টের&nbsp;ক্ষেত্রে&nbsp;JavaScript।&nbsp;পাইথনের&nbsp;সিনট্যাক্স&nbsp;ইংরেজি&nbsp;ভাষার&nbsp;খুব&nbsp;কাছাকাছি&nbsp;হওয়ায়&nbsp;নতুনরা&nbsp;খুব&nbsp;দ্রুত&nbsp;এটি&nbsp;আয়ত্ত&nbsp;করতে&nbsp;পারে।&nbsp;অন্যদিকে,&nbsp;আপনি&nbsp;যদি&nbsp;ব্রাউজারে&nbsp;ম্যাজিক&nbsp;দেখতে&nbsp;চান,&nbsp;তবে&nbsp;জাভাস্ক্রিপ্ট&nbsp;হলো&nbsp;সেরা&nbsp;পছন্দ। নিচে&nbsp;জাভাস্ক্রিপ্টের&nbsp;একদম&nbsp;বেসিক&nbsp;একটি&nbsp;কোড&nbsp;উদাহরণ&nbsp;দেওয়া&nbsp;হলো: // একটি সিম্পল ফাংশন যা আপনার নাম প্রিন্ট করবে function sayHello(name) {&hellip;</p>
+				</div>
+				<div class="post-meta">
+					<div class="post-meta-wrapper post-author-date">
+						<span class="post-author"> <a href="https://techblog.site.je/author/mdalamins20/">mdalamins20</a></span><span class="post-date"><a href="https://techblog.site.je/2026/08/01/%e0%a6%86%e0%a6%ae%e0%a6%bf-%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a6%a4%e0%a7%87-%e0%a6%9a%e0%a6%be%e0%a6%87-%e0%a6%95%e0%a6%bf%e0%a6%a8%e0%a7%8d%e0%a6%a4/"><time class="entry-date published updated" datetime="2026-08-01T01:12:47+06:00">August 1, 2026</time></a></span>					</div>
+					<div class="post-meta-wrapper read-time-post-views">
+						<span class="read-time">
+							3 min read						</span>
+						<span class="post-views">0 View</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</article><!-- #post-38 -->
+			</div>
+			
+	<nav class="navigation pagination" aria-label="Posts pagination">
+		<h2 class="screen-reader-text">Posts pagination</h2>
+		<div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://techblog.site.je/page/2/?i=1">2</a>
+<a class="next page-numbers" href="https://techblog.site.je/page/2/?i=1">Next</a></div>
+	</nav>
+	</main><!-- #main -->
+
+	
+<aside id="secondary" class="widget-area">
+	<section id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://techblog.site.je/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></section><section id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="https://techblog.site.je/2026/08/01/%e0%a6%97%e0%a6%bf%e0%a6%9f%e0%a6%b9%e0%a6%be%e0%a6%ac-%e0%a6%aa%e0%a7%87%e0%a6%9c-github-pages-%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b9%e0%a6%be%e0%a6%b0-%e0%a6%95%e0%a6%b0%e0%a7%87-%e0%a6%af/">গিটহাব পেজ (GitHub Pages) ব্যবহার করে যেকোনো ওয়েবসাইট সম্পূর্ণ ফ্রিতে লাইভ করুন: একটি পূর্ণাঙ্গ নির্দেশিকা</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://techblog.site.je/2026/08/01/fastapi-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%85%e0%a6%9f%e0%a7%8b%e0%a6%ae%e0%a7%87%e0%a6%b6%e0%a6%a8-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%81%e0%a6%a8-%e0%a6%aa%e0%a6%be%e0%a6%87/">FastAPI দিয়ে অটোমেশন শিখুন: পাইথনের আধুনিক ফ্রেমওয়ার্ক দিয়ে প্রজেক্ট অটোমেশনের কমপ্লিট গাইড</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://techblog.site.je/2026/08/01/%e0%a6%95%e0%a7%8b%e0%a6%a1%e0%a6%bf%e0%a6%82-%e0%a6%b6%e0%a6%bf%e0%a6%96%e0%a7%87-%e0%a6%95%e0%a6%bf%e0%a6%ad%e0%a6%be%e0%a6%ac%e0%a7%87-%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0-%e0%a6%ab/">কোডিং শিখে কিভাবে আপনার ফিউচার আপডেট করবে: একজন ডিজিটাল সলিউশন আর্কিটেক্টের গাইডলাইন</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a7%87-%e0%a6%b2%e0%a6%9c%e0%a6%bf%e0%a6%95-%e0%a6%b2%e0%a7%87%e0%a6%96%e0%a6%be%e0%a6%b0-%e0%a6%ae%e0%a6%be%e0%a6%b8%e0%a7%8d/">ফ্লাটারে লজিক লেখার মাস্টারক্লাস: যেভাবে সবকিছু মনে রেখে সুপার ফাস্ট স্পিডে কোড লিখবেন</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://techblog.site.je/2026/08/01/%e0%a6%ab%e0%a7%8d%e0%a6%b2%e0%a6%be%e0%a6%9f%e0%a6%be%e0%a6%b0-flutter-%e0%a6%a6%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87-%e0%a6%ae%e0%a7%8b%e0%a6%ac%e0%a6%be%e0%a6%87%e0%a6%b2-%e0%a6%85%e0%a7%8d/">ফ্লাটার (Flutter) দিয়ে মোবাইল অ্যাপ ডেভেলপমেন্ট: শূন্য থেকে প্রো-লেভেল মাস্টারক্লাস</a></li>
+</ul></div></div></section><section id="block-4" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Comments</h2><ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://wordpress.org/">A WordPress Commenter</a> on <a class="wp-block-latest-comments__comment-link" href="https://techblog.site.je/2026/07/26/hello-world/#comment-1">Hello world!</a></footer></article></li></ol></div></div></section><section id="block-5" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Archives</h2><ul class="wp-block-archives-list wp-block-archives">	<li><a href='https://techblog.site.je/2026/08/'>August 2026</a></li>
+	<li><a href='https://techblog.site.je/2026/07/'>July 2026</a></li>
+</ul></div></div></section><section id="block-6" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Categories</h2><ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-1"><a href="https://techblog.site.je/category/uncategorized/">Uncategorized</a>
+</li>
+</ul></div></div></section></aside><!-- #secondary -->
+
+</div>
+</div>
+</div>
+	
+<footer class="site-footer">
+	<div class="section-wrapper">
+				<div class="vyro-blog-bottom-footer">
+						<div class="bottom-footer-content no-social-menu">
+					<p>Copyright &copy; 2026 <a href="https://techblog.site.je/">Tech BLog</a> | Vyro Blog&nbsp;by&nbsp;<a target="_blank" href="https://ascendoor.com/">Ascendoor</a> | Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>. </p>					
+					<div class="header-social-icon">
+					<div class="header-social-icon-container">
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<a href="#" class="scroll-to-top"></a>
+
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/vyro-blog/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script src="https://techblog.site.je/wp-content/themes/vyro-blog/assets/js/navigation.min.js?ver=1.0.0" id="vyro-blog-navigation-js"></script>
+<script src="https://techblog.site.je/wp-content/themes/vyro-blog/assets/js/slick.min.js?ver=1.8.0" id="vyro-blog-slick-js-js"></script>
+<script src="https://techblog.site.je/wp-content/themes/vyro-blog/assets/js/custom.min.js?ver=1.0.0" id="vyro-blog-custom-script-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://techblog.site.je/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://techblog.site.je/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Page Caching using Disk: Enhanced 
+
+Served from: techblog.site.je @ 2026-08-01 01:34:21 by W3 Total Cache
+-->
