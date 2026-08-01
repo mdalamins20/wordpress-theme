@@ -5,7 +5,7 @@ Theme URI: https://ascendoor.com/themes/vyro-blog/
 Author: Ascendoor
 Author URI: https://ascendoor.com/
 Description: Vyro Blog is a sleek, modern WordPress theme perfect for both personal and professional blogs. It’s fully responsive, SEO-friendly, and ready for translation, making it easy to connect with readers worldwide. With dependable updates and dedicated support, you can focus on creating great content while we handle the rest. Start your blogging adventure with Vyro Blog today. Check out the theme documentation at: https://docs.ascendoor.com/docs/vyro-blog/ and see the demo at: https://demos.ascendoor.com/vyro-blog/
-Version: 1.0.2
+Version: 1.0.3
 Tested up to: 7.0
 Requires PHP: 7.4
 Requires at least: 5.0
@@ -5039,6 +5039,9 @@ p, a, span, div, li,
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .blog-post-container .blog-post-inner:hover {
@@ -5048,10 +5051,20 @@ p, a, span, div, li,
 
 .blog-post-container .blog-post-inner .blog-post-detail {
     padding: 24px !important;
+    flex-grow: 1;
+}
+
+/* Fix giant images and grid */
+.blog-archive-layout.archive-tile-grid-layout.column-3 article:nth-child(1),
+.blog-archive-layout.archive-tile-grid-layout.column-2 article:nth-child(1) {
+    grid-column: span 1 !important;
 }
 
 .blog-post-container .blog-post-inner .blog-post-image img {
     border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover;
 }
 
 /* Fix meta spacing */
