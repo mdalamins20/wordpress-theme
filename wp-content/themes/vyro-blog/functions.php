@@ -190,22 +190,23 @@ function vyro_blog_scripts() {
 	// Append .min if SCRIPT_DEBUG is false.
 	$min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-	// Slick style.
-	wp_enqueue_style( 'vyro-blog-slick-css', get_template_directory_uri() . '/assets/css/slick' . $min . '.css', array(), '1.8.0' );
 
-	// Fontawesome style.
-	wp_enqueue_style( 'vyro-blog-font-awesome-css', get_template_directory_uri() . '/assets/css/all' . $min . '.css', array(), '7.2.0' );
+	// Slick style.
+	wp_enqueue_style( 'vyro-blog-slick-css', get_template_directory_uri() . '/assets/css/slick' . $min . '.css', array(), '1.8.0' );
+
+	// Fontawesome style.
+	wp_enqueue_style( 'vyro-blog-font-awesome-css', get_template_directory_uri() . '/assets/css/all' . $min . '.css', array(), '7.2.0' );
+
+	// Google fonts.
+	wp_enqueue_style( 'vyro-blog-google-fonts', wptt_get_webfont_url( vyro_blog_get_fonts_url() ), array(), null );
+	wp_enqueue_style( 'vyro-blog-bengali-font', 'https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap', array(), null );
+
+	// Main style.
+	wp_enqueue_style( 'vyro-blog-style', get_template_directory_uri() . '/style.css', array(), VYRO_BLOG_VERSION );
+
+	// Navigation script.
+	wp_enqueue_script( 'vyro-blog-navigation', get_template_directory_uri() . '/assets/js/navigation' . $min . '.js', array(), VYRO_BLOG_VERSION, true );
 
-	// Google fonts.
-	wp_enqueue_style( 'vyro-blog-google-fonts', wptt_get_webfont_url( vyro_blog_get_fonts_url() ), array(), null );
-
-	// Main style.
-	wp_enqueue_style( 'vyro-blog-style', get_template_directory_uri() . '/style.css', array(), VYRO_BLOG_VERSION );
-
-	// Navigation script.
-	wp_enqueue_script( 'vyro-blog-navigation', get_template_directory_uri() . '/assets/js/navigation' . $min . '.js', array(), VYRO_BLOG_VERSION, true );
-
-	// Slick script.
 	wp_enqueue_script( 'vyro-blog-slick-js', get_template_directory_uri() . '/assets/js/slick' . $min . '.js', array( 'jquery' ), '1.8.0', true );
 
 	// Custom script.
