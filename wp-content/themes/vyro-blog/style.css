@@ -5034,6 +5034,7 @@ p, a, span, div, li,
 /* Enhance Card Design */
 .blog-post-container {
     min-width: 0;
+    max-width: 100%;
 }
 
 .blog-post-container .blog-post-inner {
@@ -5047,6 +5048,7 @@ p, a, span, div, li,
     flex-direction: column;
     height: 100%;
     min-width: 0;
+    max-width: 100%;
 }
 
 .blog-post-container .blog-post-inner:hover {
@@ -5060,6 +5062,13 @@ p, a, span, div, li,
 }
 
 /* Fix giant images and grid */
+.grid-section.grid-style-2 .blog-post-container-wrapper,
+.blog-archive-layout.archive-tile-grid-layout.column-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100%;
+    max-width: 100%;
+}
+
 .blog-archive-layout.archive-tile-grid-layout.column-3 article:nth-child(1),
 .blog-archive-layout.archive-tile-grid-layout.column-2 article:nth-child(1) {
     grid-column: span 1 !important;
