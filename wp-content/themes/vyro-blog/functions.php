@@ -9,7 +9,7 @@
 
 if ( ! defined( 'VYRO_BLOG_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'VYRO_BLOG_VERSION', '1.0.0' );
+	define( 'VYRO_BLOG_VERSION', '1.0.4' );
 }
 
 /**
