@@ -5032,6 +5032,10 @@ p, a, span, div, li,
 }
 
 /* Enhance Card Design */
+.blog-post-container {
+    min-width: 0;
+}
+
 .blog-post-container .blog-post-inner {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -5042,6 +5046,7 @@ p, a, span, div, li,
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-width: 0;
 }
 
 .blog-post-container .blog-post-inner:hover {
